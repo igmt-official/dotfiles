@@ -1,15 +1,29 @@
 # -*- coding: utf-8 -*-
 import os
 import subprocess
-from colors import zerotwo
 
-from libqtile import qtile
-from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
-from libqtile.command import lazy
-from libqtile import layout, bar, widget, hook
+# Main Script
+from colors import zerotwo
+from ztbar import bar
+
+from libqtile import hook
+
+from libqtile.extension.dmenu import DmenuRun
+from libqtile.extension.window_list import WindowList
+from libqtile.extension.command_set import CommandSet
+
+# Import widgets and bar
+from libqtile.config import Click, Drag, DropDown, Group, Key, Match, ScratchPad, Screen
 from libqtile.lazy import lazy
-from libqtile.utils import guess_terminal
-from typing import List  # noqa: F401from typing import List  # noqa: F401
+
+# Import layout objects
+from libqtile.layout.columns import Columns
+from libqtile.layout.xmonad import MonadTall
+from libqtile.layout.stack import Stack
+from libqtile.layout.floating import Floating
+
+# from libqtile.utils import guess_terminal
+from typing import List 
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
@@ -104,89 +118,29 @@ keys = [
              lazy.layout.toggle_split(),
              desc='Toggle between split and unsplit sides of stack'
              ),
-         # Dmenu scripts launched using the key chord SUPER+p followed by 'key'
-         KeyChord([mod], "p", [
-             Key([], "e",
-                 lazy.spawn("./dmscripts/dm-confedit"),
-                 desc='Choose a config file to edit'
-                 ),
-             Key([], "i",
-                 lazy.spawn("./dmscripts/dm-maim"),
-                 desc='Take screenshots via dmenu'
-                 ),
-             Key([], "k",
-                 lazy.spawn("./dmscripts/dm-kill"),
-                 desc='Kill processes via dmenu'
-                 ),
-             Key([], "l",
-                 lazy.spawn("./dmscripts/dm-logout"),
-                 desc='A logout menu'
-                 ),
-             Key([], "m",
-                 lazy.spawn("./dmscripts/dm-man"),
-                 desc='Search manpages in dmenu'
-                 ),
-             Key([], "o",
-                 lazy.spawn("./dmscripts/dm-bookman"),
-                 desc='Search your qutebrowser bookmarks and quickmarks'
-                 ),
-             Key([], "r",
-                 lazy.spawn("./dmscripts/dm-reddit"),
-                 desc='Search reddit via dmenu'
-                 ),
-             Key([], "s",
-                 lazy.spawn("./dmscripts/dm-websearch"),
-                 desc='Search various search engines via dmenu'
-                 ),
-             Key([], "p",
-                 lazy.spawn("passmenu"),
-                 desc='Retrieve passwords with dmenu'
-                 )
-         ])
 ]
 
 layout_theme = {"border_width": 2,
                 "margin": 20,
                 "border_focus": zerotwo['bg'],
-                "border_normal": zerotwo['bgDarker']
+                "border_normal": zerotwo['inactive']
                 }
 
 layouts = [
-    layout.MonadTall(**layout_theme)
+    MonadTall(**layout_theme)
 ]
 
 widget_defaults = dict(
     font = "sans",
     fontsize = 10,
     padding = 2,
+    foreground = zerotwo['fg'],
     background = zerotwo['bg']
 )
                          
 extension_defaults = widget_defaults.copy()
 
-screens = [
-    Screen(
-        top=bar.Bar(
-            [
-                widget.GroupBox(
-                    borderwidth = 0,
-                    active = zerotwo['grey'],
-                    inactive = zerotwo['darkGrey'],
-                    disable_drag = True,
-                    block_highlight_text_color = zerotwo['fg'],
-                    highlight_color = zerotwo['darkBg'],
-                    highlight_method = "block", 
-                ),
-                widget.WindowName(),
-                widget.Systray(),
-                widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
-                widget.QuickExit(),
-            ],
-            24,
-            background = zerotwo['bg']
-        ),
-    ),
-]
+screens = [Screen(top = bar)]
 
 groups = [
     Group('1', label="HOME", layout="monadtall"),
