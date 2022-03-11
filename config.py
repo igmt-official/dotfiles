@@ -173,6 +173,11 @@ dgroups_app_rules = []  # type: list
 follow_mouse_focus = True
 bring_front_click = False
 cursor_warp = False
+auto_fullscreen = True
+focus_on_window_activation = "smart"
+reconfigure_screens = True
+auto_minimize = True
+wmname = "LG3D"
 
 floating_layout = layout.Floating(
     float_rules=[
@@ -189,15 +194,7 @@ floating_layout = layout.Floating(
     ]
 )
 
-auto_fullscreen = True
-focus_on_window_activation = "smart"
-reconfigure_screens = True
-
-auto_minimize = True
-
 @hook.subscribe.startup_once
 def start_once():
     home = os.path.expanduser('~')
     subprocess.call([home + '/.config/qtile/autostart.sh'])
-
-wmname = "LG3D"
