@@ -8,7 +8,7 @@ from libqtile import hook
 
 # Separate Modules
 from settings.key import keys, mouse
-from settings.layouts import groups, layouts, widget_defaults, screens
+from settings.layouts import groups, layouts, widget_defaults, extension_defaults, screens
 
 auto_fullscreen = True
 focus_on_window_activation = "smart"
