@@ -159,7 +159,7 @@ widget_defaults = dict(
     font = "sans",
     fontsize = 10,
     padding = 2,
-    background = zerotwo['bg]
+    background = zerotwo['bg']
 )
                          
 extension_defaults = widget_defaults.copy()
