@@ -123,7 +123,7 @@ keys = [
 layout_theme = {"border_width": 2,
                 "margin": 20,
                 "border_focus": zerotwo['bg'],
-                "border_normal": zerotwo['inactive']
+                "border_normal": zerotwo['darkBg']
                 }
 
 layouts = [
@@ -144,7 +144,7 @@ screens = [Screen(top = bar)]
 
 groups = [
     Group('1', label="HOME", layout="monadtall"),
-    Group(name='2', label="WEB", matches=[Match(wm_class='chromium')], layout="monadtall"),
+    Group(name='2', label="WEB", matches=[Match(wm_class='qutebrowser')], layout="monadtall"),
     Group(name='3', label="DEV", matches=[Match(wm_class='Alacritty')], layout="monadtall"),
     Group(name='4', label="CHAT", layout='monadtall')
 ]
