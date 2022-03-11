@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 import os
 import subprocess
+from colors import zerotwo
+
 from libqtile import qtile
 from libqtile.config import Click, Drag, Group, KeyChord, Key, Match, Screen
 from libqtile.command import lazy
@@ -145,8 +147,8 @@ keys = [
 
 layout_theme = {"border_width": 2,
                 "margin": 20,
-                "border_focus": "f299a5",
-                "border_normal": "7e4f54"
+                "border_focus": zerotwo['bg'],
+                "border_normal": zerotwo['bgDarker']
                 }
 
 layouts = [
@@ -154,35 +156,34 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="sans",
-    fontsize=12,
-    padding=3,
+    font = "sans",
+    fontsize = 10,
+    padding = 2,
+    background = zerotwo['bg]
 )
+                         
 extension_defaults = widget_defaults.copy()
 
 screens = [
     Screen(
         top=bar.Bar(
             [
-                widget.CurrentLayout(),
-                widget.GroupBox(),
-                widget.Prompt(),
-                widget.WindowName(),
-                widget.Chord(
-                    chords_colors={
-                        "launch": ("#ff0000", "#ffffff"),
-                    },
-                    name_transform=lambda name: name.upper(),
+                widget.GroupBox(
+                    borderwidth = 0,
+                    active = zerotwo['grey'],
+                    inactive = zerotwo['darkGrey'],
+                    disable_drag = True,
+                    block_highlight_text_color = zerotwo['fg'],
+                    highlight_color = zerotwo['darkBg'],
+                    highlight_method = "block", 
                 ),
-                widget.TextBox("default config", name="default"),
-                widget.TextBox("Press &lt;M-r&gt; to spawn", foreground="#d75f5f"),
+                widget.WindowName(),
                 widget.Systray(),
                 widget.Clock(format="%Y-%m-%d %a %I:%M %p"),
                 widget.QuickExit(),
             ],
             24,
-            # border_width=[2, 0, 2, 0],  # Draw top and bottom borders
-            # border_color=["ff00ff", "000000", "ff00ff", "000000"]  # Borders are magenta
+            background = zerotwo['bg']
         ),
     ),
 ]
