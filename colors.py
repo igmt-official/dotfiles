@@ -1,4 +1,6 @@
 zerotwo = { "bg": "#f299a5",
-           "bgDarker": "#e8849d",
+           "darkBg": "#e8849d",
            "fg": "#ffffff",
+           "grey": "#7e4f54",
+           "darkGrey": "#4f3436",
           }
