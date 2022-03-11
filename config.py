@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # Main Modules
-# from libqtile.utils import guess_terminal
 import os
 import subprocess
 from typing import List 
 from libqtile import hook
+# from libqtile.utils import guess_terminal
 
 # Separate Modules
 from settings.key import keys, mouse
