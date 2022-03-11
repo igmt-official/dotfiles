@@ -13,7 +13,7 @@ from typing import List  # noqa: F401from typing import List  # noqa: F401
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
 myTerm = "alacritty"      # My terminal of choice
-myBrowser = "chromium"    # My browser of choice
+myBrowser = "qutebrowser"    # My browser of choice
 
 keys = [
          ### The essentials
@@ -27,7 +27,7 @@ keys = [
              ),
          Key([mod], "b",
              lazy.spawn(myBrowser),
-             desc='Chromium'
+             desc='QuteBrowser'
              ),
          Key([mod], "Tab",
              lazy.next_layout(),
