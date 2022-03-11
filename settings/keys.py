@@ -1,3 +1,6 @@
+import os
+
+from libqtile.config import Key
 from libqtile.lazy import lazy
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
