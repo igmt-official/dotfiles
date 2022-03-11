@@ -1,6 +1,6 @@
 import os
 
-from libqtile.config import Key
+from libqtile.config import Key, Click, Drag
 from libqtile.lazy import lazy
 
 mod = "mod4"              # Sets mod key to SUPER/WINDOWS
@@ -31,4 +31,11 @@ keys = [
     Key([mod, "shift"], "Tab", lazy.layout.rotate(), lazy.layout.flip(), desc='Switch which side main pane occupies (XmonadTall)'),
     Key([mod], "space", lazy.layout.next(), desc='Switch window focus to other pane(s) of stack'),
     Key([mod, "shift"], "space", lazy.layout.toggle_split(), desc='Toggle between split and unsplit sides of stack'),
+]
+
+# Drag floating layouts.
+mouse = [
+    Drag([mod], "Button1", lazy.window.set_position_floating(), start=lazy.window.get_position()),
+    Drag([mod], "Button3", lazy.window.set_size_floating(), start=lazy.window.get_size()),
+    Click([mod], "Button2", lazy.window.bring_to_front()),
 ]
