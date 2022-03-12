@@ -37,6 +37,17 @@ timedatectl set-ntp true
 # To check the service status, use timedatectl status.
 ```
 
+Partition the disks
+When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 
+or /dev/mmcblk0. To identify these devices, use lsblk or fdisk.
+```bash
+fdisk -l
+```
 
-
+Use fdisk or parted to modify partition tables. For example:
+```bash
+fdisk /dev/the_disk_to_be_partitioned
+# Remember to check your block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0
+# For me is "fdisk /dev/sda"
+```
 
