@@ -195,17 +195,9 @@ pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty qut
 # git, nodejs, npm (For me this is also essential because sometimes we install modules or packages is needed git, nodejs, or npm).
 ```
 
-Exit:
+Now all the setup is finish we will exit and umount and try to reboot and unplug the bootable usb, let see if our Arch Linux will boot normal.Exit:
 ```bash
 exit
-```
-
-Umount:
-```bash
 umount /mnt
-```
-
-Now all the setup is finish try to reboot and unplug the bootable usb, let see if our Arch Linux will boot normal.
-```bash
 reboot
 ```
