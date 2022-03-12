@@ -225,7 +225,7 @@ reboot
 
 And now we boot normally, try to login your "User and Pass".
 
-# Qtile installation and configuration
+# Qtile installation
 Now installed our ```Window Manager``` which is ```Qtile```.
 ```bash
 sudo pacman -S qtile
@@ -264,3 +264,5 @@ change your layout to spanish:
 ```bash
 setxkbmap es
 ```
+
+Qtile basic system utilities
