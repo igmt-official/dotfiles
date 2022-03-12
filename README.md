@@ -52,7 +52,7 @@ fdisk /dev/the_disk_to_be_partitioned
 # For me is "fdisk /dev/sda"
 ```
 
-Now, jus follow my command line, to make our partition
+Now, jus follow my command line, to make our partition.
 ```bash
 # Type "o" to create MBR partition.
 # Type "n" then press enter until you see the second "default with random numbers" then type "+2GB" this is will create our "Swapfile Partition".
@@ -73,6 +73,77 @@ Once the partitions have been created, each newly created partition must be form
  
  And now we done formatting our partition, next step is to turn on our "Swapfile" and mount "mnt" in our "Root Partition".
  ```bash
- swapon /dev/swap_partition # To turn on our "Swapfile Partition", for me is "swapon /dev/sda1"
- mount /dev/root_partition /mnt # To mount our "mnt" in our "Root Partition", for me is "mount /dev/sda2 /mnt"
+ swapon /dev/swap_partition # To turn on our "Swapfile Partition", for me is "swapon /dev/sda1".
+ mount /dev/root_partition /mnt # To mount our "mnt" in our "Root Partition", for me is "mount /dev/sda2 /mnt".
  ```
+ 
+Install essential packages
+Use the pacstrap script to install the base package, Linux kernel and firmware for common hardware:
+```bash
+pacstrap /mnt base linux linux-firmware
+# Wait for the download completed.
+```
+
+Fstab
+Generate an fstab file (use -U or -L to define by UUID or labels, respectively):
+```bash
+genfstab -U /mnt >> /mnt/etc/fstab
+```
+
+Chroot
+Change root into the new system:
+```bash
+arch-chroot /mnt
+```
+
+Time zone
+Set the time zone:
+```bash
+ln -sf /usr/share/zoneinfo/Region/City /etc/localtime # For me is "ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime".
+# To check available Region, type "ls /usr/share/zoneinfo/Region" and find your Region.
+# To check available City, type "ls /usr/share/zoneinfo/Your_Region/City" and find your City.
+```
+
+Run hwclock to generate /etc/adjtime:
+```bash
+hwclock --systohc
+```
+
+Now installed our text editor ```nano or vim``` which one you prefer.
+```bash
+pacman -S nano
+```
+
+Localization.
+```bash
+# Edit "/etc/locale.gen" and uncomment "en_US.UTF-8 UTF-8" and other needed locales. 
+# To edit just type "nano /etc/locale.gen".
+```
+
+Generate the locales by running:
+```bash
+locale-gen
+```
+
+Create the locale.conf file, and set the LANG variable accordingly:
+```bash
+nano /etc/locale.conf
+# Now write this "LANG=en_US.UTF-8" according to your localization then save it.
+```
+
+Create the hostname file:
+```bash
+nano /etc/hostname
+# Write your prefer hostname for me is "myArch"
+```
+
+Edit the hosts file:
+```bash
+nano /etc/hosts
+# Now you will see two lines that already writed in there, below of that two lines write this:
+127.0.0.1 localhost
+::1 localhost
+127.0.1.1 yourHostname for me is "127.0.1.1 myArch"
+```
+
+
