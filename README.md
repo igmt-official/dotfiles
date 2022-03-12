@@ -266,3 +266,4 @@ setxkbmap es
 ```
 
 # Qtile basic system utilities
+In this section we will cover some software that almost everybody needs on their system.
