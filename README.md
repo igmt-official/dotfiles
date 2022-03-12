@@ -24,8 +24,17 @@ This is only for Non-UEFI (MBR) installation, i told you before, this is my way 
 i just based on my specs desktop, if you are UEFI users then go to youtube there's a lot tutorial for UEFI.
 
 Make sure you have an internet, if you have response for that website, then proceed to the next step.
+And if you don't have response on that ping, you don't have an internet, or you're not connected in Ethernet Lan Cable,
+for that search on youtube, because remember this is only my way, i didn't setup my internet in wireless.
 ```bash
-ping google.com
+ping archlinux.org
 ```
+
+Update the system clock
+Use timedatectl to ensure the system clock is accurate:
+```bash
+timedatectl set-ntp true
+```
+
 
 
