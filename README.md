@@ -231,6 +231,20 @@ Now installed our ```Window Manager``` which is ```Qtile```.
 sudo pacman -S qtile
 ```
 
+And setup our ```Qtile``` in ```.xinitrc``` so we can enter in window manager.
+```bash
+# Edit your .xinitrc using your text editor like "nano or vim"
+nano .xinitrc
+
+# Now go to the bottom of all codes in there, and put this line:
+exec qtile
+```
+
+To enter in our ```Qtile``` window manager, enter this line:
+```bash
+startx
+```
+
 Now that you're in Qtile, you should know some of the default keybindings.
 
 | Key                  | Action                     |
