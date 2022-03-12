@@ -33,7 +33,8 @@ ping archlinux.org
 Update the system clock
 Use timedatectl to ensure the system clock is accurate:
 ```bash
-timedatectl set-ntp true -- To check the service status, use timedatectl status.
+timedatectl set-ntp true 
+# To check the service status, use timedatectl status.
 ```
 
 
