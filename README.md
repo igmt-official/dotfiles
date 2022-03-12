@@ -100,8 +100,8 @@ Time zone
 Set the time zone:
 ```bash
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime # For me is "ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime".
-# To check available Region, type "ls /usr/share/zoneinfo/Region" and find your Region.
-# To check available City, type "ls /usr/share/zoneinfo/Your_Region/City" and find your City.
+# To check available Region, type "ls /usr/share/zoneinfo/Region" and find your Region".
+# To check available City, type "ls /usr/share/zoneinfo/Your_Region/City" and find your City".
 ```
 
 Run hwclock to generate /etc/adjtime:
