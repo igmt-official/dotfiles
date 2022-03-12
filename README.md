@@ -25,6 +25,8 @@ i just based on my specs desktop, if you are UEFI users then go to youtube there
 
 Make sure you have an internet, if you have response for that website, then proceed to the next step.
 
-```ping google.com```
+```bash
+ping google.com
+```
 
 
