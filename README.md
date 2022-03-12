@@ -207,4 +207,6 @@ umount /mnt
 reboot
 ```
 
+And now we boot normally, try to login your "User and Pass".
+
 # Qtile installation and configuration
