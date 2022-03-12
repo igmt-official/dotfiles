@@ -42,6 +42,7 @@ When recognized by the live system, disks are assigned to a block device such as
 or /dev/mmcblk0. To identify these devices, use lsblk or fdisk.
 ```bash
 fdisk -l
+# And my block device is "/dev/sda"
 ```
 
 Use fdisk or parted to modify partition tables. For example:
@@ -51,3 +52,8 @@ fdisk /dev/the_disk_to_be_partitioned
 # For me is "fdisk /dev/sda"
 ```
 
+Now, jus follow my command line, to make our partition
+```bash
+# Type "o" to create MBR partition.
+# Type "n" then press enter until you see the second "default with random numbers" then type "+2GB" this is will create our swapfile partition.
+```
