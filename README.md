@@ -116,8 +116,8 @@ pacman -S nano
 
 Localization.
 ```bash
+nano /etc/locale.gen
 # Edit "/etc/locale.gen" and uncomment "en_US.UTF-8 UTF-8" and other needed locales. 
-# To edit just type "nano /etc/locale.gen".
 ```
 
 Generate the locales by running:
@@ -143,7 +143,69 @@ nano /etc/hosts
 # Now you will see two lines that already writed in there, below of that two lines write this:
 127.0.0.1 localhost
 ::1 localhost
-127.0.1.1 yourHostname for me is "127.0.1.1 myArch"
+127.0.1.1 yourHostname # for me is "127.0.1.1 myArch"
 ```
 
+Root password
+Set the root password:
+```bash
+passwd
+# Type your prefer password.
+```
 
+Add user and password
+```bash
+useradd -m yourUserName # For me is "useradd -m myArch".
+passwd yourUserName # And type your prefer password.
+```
+
+User groups
+Non-root workstation/desktop users often need to be added to some of following groups to allow access to hardware peripherals and facilitate system administration:
+```bash
+usermod -aG wheel,audio,video,optical,storage,input,disk yourUserName
+```
+
+Now installed sudo:
+```bash
+pacman -S sudo
+```
+
+Follow this step this is essentials, this is only for None-UEFI (MBR).
+```bash
+grub-install --target=i386-pc /dev/sda
+# "/dev/sda" is the main disk not the one we created partition.
+# "--target=i386-pc" is only for Non-UEFI (MBR).
+
+grub-mkconfig -o /boot/grub/grub.cfg # Remember this is only for Non-UEFI (MBR)
+```
+
+Installed our essentials and optional package:
+```bash
+pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty qutebrowser dmenu
+
+# Essential List:
+# networkmanager (For our internet)
+# qutebrowser (Or your prefer browser)
+# alacritty (or your prefer terminal (cmd))
+# dmenu (To launch our apps)
+
+# Optional List:
+# base-devel (This is a package group that includes tools needed for building (compiling and linking)).
+# xorg and xorg-xinit (For me this is a essential because for the one didn't want to use a "Display Manager" like me use this to start your "Window Manager").
+# git, nodejs, npm (For me this is also essential because sometimes we install modules or packages is needed git, nodejs, or npm).
+```
+
+Exit:
+```bash
+exit
+```
+
+Umount:
+```bash
+umount /mnt
+```
+
+Now all the setup is finish try to reboot and unplug the bootable usb, let see if our Arch Linux will boot normal.
+```bash
+reboot
+```
