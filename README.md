@@ -226,3 +226,7 @@ reboot
 And now we boot normally, try to login your "User and Pass".
 
 # Qtile installation and configuration
+Now installed our ```Window Manager``` which is ```qtile```.
+```bash
+sudo pacman -S qtile
+```
