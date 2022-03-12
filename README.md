@@ -265,4 +265,4 @@ change your layout to spanish:
 setxkbmap es
 ```
 
-Qtile basic system utilities
+# Qtile basic system utilities
