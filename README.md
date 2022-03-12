@@ -55,5 +55,9 @@ fdisk /dev/the_disk_to_be_partitioned
 Now, jus follow my command line, to make our partition
 ```bash
 # Type "o" to create MBR partition.
-# Type "n" then press enter until you see the second "default with random numbers" then type "+2GB" this is will create our swapfile partition.
+# Type "n" then press enter until you see the second "default with random numbers" then type "+2GB" this is will create our "Swapfile Partition".
+# Type "n" again then press enter until the end, because this is our "Root Parition" so the rest of our disk size will be put in here.
+
+# Remember the first one is "Swapfile Partition" that partition name is "/dev/sda1/ and the second one is our "Root Partition" "/dev/sda2/".
+# Now type "t" to change our partition type, type "1" for our "Swapfile Partition" and then type "L" to check all list partition type, find the type of "Linux Swap" then enter that code.
 ```
