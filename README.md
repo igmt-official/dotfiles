@@ -196,13 +196,14 @@ grub-mkconfig -o /boot/grub/grub.cfg # Remember this is only for Non-UEFI (MBR)
 
 Installed our essentials and optional package:
 ```bash
-pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty qutebrowser dmenu
+pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty qutebrowser dmenu mesa
 
 # Essential List:
 # networkmanager (For our internet)
 # qutebrowser (Or your prefer browser)
 # alacritty (or your prefer terminal (cmd))
 # dmenu (To launch our apps)
+# mesa (For Intel and Amd only)
 
 # Optional List:
 # base-devel (This is a package group that includes tools needed for building (compiling and linking)).
