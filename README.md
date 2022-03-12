@@ -196,13 +196,13 @@ grub-mkconfig -o /boot/grub/grub.cfg # Remember this is only for Non-UEFI (MBR)
 
 Installed our essentials and optional package:
 ```bash
-pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty qutebrowser dmenu mesa
+pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty firefox rofi mesa
 
 # Essential List:
 # networkmanager (For our internet)
-# qutebrowser (Or your prefer browser)
+# firefox (Or your prefer browser)
 # alacritty (or your prefer terminal (cmd))
-# dmenu (To launch our apps)
+# rofi (To launch our apps)
 # mesa (For Intel and Amd only)
 
 # Optional List:
@@ -292,7 +292,13 @@ Key([mod, 'shift'], "m", lazy.spawn("rofi -show")),
 ```
 
 Now restart Qtile with **mod + control + r**. You should be able to open your
-menu and terminal emulator with keybindings.
+menu and terminal emulator with keybindings. If you picked rofi, you can
+change its theme like so:
+
+```bash
+sudo pacman -S which
+rofi-theme-selector
+```
 
 That's it for Qtile, now you can start hacking on it and make it your own.
 Checkout my custom Qtile config
@@ -302,3 +308,18 @@ battery, mounting drives, etc.
 
 # Qtile basic system utilities
 In this section we will cover some software that almost everybody needs on their system.
+
+## Wallpaper
+
+First things first, your screen looks empty and black, so you might want to have
+a wallpaper not to feel so depressed. You can open ```firefox``` through ```rofi```
+using **mod + m** and download one. Then install
+**[feh](https://wiki.archlinux.org/index.php/Feh)** or
+**[nitrogen](https://wiki.archlinux.org/index.php/Nitrogen)**
+and and set your wallpaper:
+
+```bash
+sudo pacman -S feh
+feh --bg-scale path/to/wallpaper
+```
+
