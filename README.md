@@ -24,7 +24,6 @@ This is only for Non-UEFI (MBR) installation, i told you before, this is my way 
 i just based on my specs desktop, if you are UEFI users then go to youtube there's a lot tutorial for UEFI.
 
 Make sure you have an internet, if you have response for that website, then proceed to the next step.
-
 ```bash
 ping google.com
 ```
