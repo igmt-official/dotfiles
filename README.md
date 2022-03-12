@@ -265,5 +265,40 @@ change your layout to spanish:
 setxkbmap es
 ```
 
+Now open the config file:
+
+```bash
+nano ~/.config/qtile/config.py
+```
+
+At the beginning, after imports, you should find an array called *keys*,
+and it contains the following line:
+
+```python
+Key([mod], "Return", lazy.spawn("xterm")),
+```
+
+Change that line to launch your terminal emulator:
+
+```python
+Key([mod], "Return", lazy.spawn("alacritty")),
+```
+
+Then add keybindings for dmenu programs that we are installed lately:
+
+```python
+Key([mod], "m", lazy.spawn("rofi -show run")),
+Key([mod, 'shift'], "m", lazy.spawn("rofi -show")),
+```
+
+Now restart Qtile with **mod + control + r**. You should be able to open your
+menu and terminal emulator with keybindings.
+
+That's it for Qtile, now you can start hacking on it and make it your own.
+Checkout my custom Qtile config
+[here](https://github.com/igmt-official/dotfiles/config/.config/qtile).
+But before that I would recommend configuring basic utilities like audio,
+battery, mounting drives, etc.
+
 # Qtile basic system utilities
 In this section we will cover some software that almost everybody needs on their system.
