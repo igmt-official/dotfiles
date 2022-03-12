@@ -237,7 +237,7 @@ And setup our ```Qtile``` in ```.xinitrc``` so we can enter in window manager.
 nano .xinitrc
 
 # Now go to the bottom of all codes in there, and put this line:
-exec qtile
+exec qtile start
 ```
 
 To enter in our ```Qtile``` window manager, enter this line:
