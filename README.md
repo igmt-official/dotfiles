@@ -230,3 +230,23 @@ Now installed our ```Window Manager``` which is ```qtile```.
 ```bash
 sudo pacman -S qtile
 ```
+
+Now that you're in Qtile, you should know some of the default keybindings.
+
+| Key                  | Action                     |
+| -------------------- | -------------------------- |
+| **mod + return**     | launch xterm               |
+| **mod + k**          | next window                |
+| **mod + j**          | previous window            |
+| **mod + w**          | kill window                |
+| **mod + [asdfuiop]** | go to workspace [asdfuiop] |
+| **mod + ctrl + r**   | restart qtile              |
+| **mod + ctrl + q**   | logout                     |
+
+Before doing anything else, if you don't have a US keyboard, you should
+change it using *setxkbmap*. To open xterm use **mod + return**. For example to
+change your layout to spanish:
+
+```bash
+setxkbmap es
+```
