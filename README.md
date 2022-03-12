@@ -170,6 +170,21 @@ Now installed sudo:
 pacman -S sudo
 ```
 
+Edit ```/etc/sudoers``` with nano or vim by uncommenting this line:
+```bash
+# Find this line:
+
+## Uncomment to allow members of group wheel to execute any command
+# %wheel ALL=(ALL) ALL
+
+# And now uncomment "# %wheel ALL=(ALL) ALL".
+# This should be the result:
+
+## Uncomment to allow members of group wheel to execute any command
+%wheel ALL=(ALL) ALL
+
+```
+
 Follow this step this is essentials, this is only for None-UEFI (MBR).
 ```bash
 grub-install --target=i386-pc /dev/sda
