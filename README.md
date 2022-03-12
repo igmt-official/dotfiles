@@ -201,3 +201,5 @@ exit
 umount /mnt
 reboot
 ```
+
+# Qtile installation and configuration
