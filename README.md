@@ -63,3 +63,16 @@ Now, jus follow my command line, to make our partition
 # And do it again on our "Root Partition" type "t", now type "2" this is our "Root Partition (/dev/sda2/)" and then type "L" again check all list partition type, find the type of "Linux" then enter that code.
 
 ```
+
+Format the partitions
+Once the partitions have been created, each newly created partition must be formatted with an appropriate file system.
+```bash
+ mkfs.ext4 /dev/root_partition # This is the our "Root Partition" for me is "mkfs.ext4 /dev/sda2/.
+ mkswap /dev/swap_partition # And this is our "Swapfile Partition" for me is "mkswap /dev/sda1/.
+ ```
+ 
+ And now we done formatting our partition, next step is to turn on our "Swapfile" and mount "mnt" in our "Root Partition".
+ ```bash
+ swapon /dev/swap_partition # To turn on our "Swapfile Partition", for me is "swapon /dev/sda1"
+ mount /dev/root_partition /mnt # To mount our "mnt" in our "Root Partition", for me is "mount /dev/sda2 /mnt"
+ ```
