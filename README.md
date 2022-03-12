@@ -19,7 +19,7 @@ and i read the documents about **[Arch Wiki](https://wiki.archlinux.org/index.ph
 here's my way to install Arch Linux, this is not fully completed installation because, this is all
 that i did on my installation.
 
-## Reminder
+### Reminder
 This is only for Non-UEFI (MBR) installation, i told you before, this is my way to install Arch Linux, 
 i just based on my specs desktop, if you are UEFI users then go to youtube there's a lot tutorial for UEFI.
 
