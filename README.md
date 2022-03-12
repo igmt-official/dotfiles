@@ -16,7 +16,7 @@ basically a description of how I made my desktop environment from scratch.
 The starting point of this guide is right after a complete clean Arch based
 distro installation, i've been searching a lot guide for installation Arch Linux,
 and i read the documents about **[Arch Wiki](https://wiki.archlinux.org/index.php/Installation_guide)**
-here's my way to install Arch Linux, this is not fully completed installation because, this is all
+here's my way to install Arch Linux, this is not fully completed installation because, this is the only
 that i did on my installation.
 
 ### Reminder
