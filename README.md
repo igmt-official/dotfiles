@@ -323,3 +323,36 @@ sudo pacman -S feh
 feh --bg-scale path/to/wallpaper
 ```
 
+## Font
+
+Download Nerd-Font:
+Go to [NerdFont]nerdfonts.com/ and hit downloads. This will give you a page where you can preview different fonts.
+Once you find a font you like, hit Download on the font to save it as a .zip.
+
+Setup the File Path:
+Make a folder for fonts in defaulit path: ```~/.local/share/(fonts)```
+and go to that folder fonts location.x
+```bash
+mkdir ~/.local/share/fonts && cd ~/.local/share/fonts
+```
+Extract Files and Install:
+Now that we have our directory set-up we can locate our .zip file and copy it over:
+```bash
+cp ~/Downloads/SampleNerdFont.zip ~/.local/share/fonts
+```
+
+Now that we are in the directory fonts we will extract the file:
+```bash
+unzip SampleNerdFont.zip
+# Note if you don't installed unzip yet, then installed it by "sudo pacman -S unzip"
+```
+Finalization
+Now that your font files are in a directory recognized by fontconfig they should be loaded automatically on boot and made available to applications in your window manager.
+
+To reload the fonts without rebooting you can run as root:
+```bash
+fc-cache -fv
+```
+
+Now try to change your font in terminal and try to copy and paste icon from [NerdFont]nerdfonts.com/.
+
