@@ -523,3 +523,40 @@ cbatticon &
 
 Every time you login you will have all systray utilities, your keyboard layout
 and monitors set.
+
+## File Manager
+
+We've done all files stuff through a terminal up to this point, but you can
+install graphical or terminal based file managers.
+For a graphical one, I suggest
+**[thunar](https://wiki.archlinux.org/index.php/Thunar)**
+and for a terminal based one,
+**[ranger](https://wiki.archlinux.org/index.php/Ranger)**, although this one
+is very vim-like, only use it if you know how to move in vim.
+
+```bash
+sudo pacman -S thunar
+```
+
+## Trash
+
+If you don't want to *rm* all the time and potentially lose files, you need a
+trashing system. Luckily, that's pretty easy to do, using
+[some of these tools](https://wiki.archlinux.org/index.php/Trash_management#Trash_creation)
+such as **[glib2](https://www.archlinux.org/packages/core/x86_64/glib2/)**,
+and for GUIs like *thunar* you need **[gvfs](https://www.archlinux.org/packages/extra/x86_64/gvfs/)**:
+
+```bash
+sudo pacman -S glib2 gvfs
+# CLI usage
+gio trash path/to/file
+# Empty trash
+gio trash --empty
+```
+
+With *thunar* you can open the trash clicking on the left panel, but on the command
+line you can use:
+
+```bash
+ls ~/.local/share/Trash/files
+```
