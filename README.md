@@ -584,4 +584,9 @@ is exactly what you need:
 ```bash
 sudo pacman -S vlc
 ```
+## Color Picker
 
+For who want to build their own palette, install color picker.
+```bash
+sudo pacman -S gcolor3
+```
