@@ -284,7 +284,7 @@ Change that line to launch your terminal emulator:
 Key([mod], "Return", lazy.spawn("alacritty")),
 ```
 
-Then add keybindings for dmenu programs that we are installed lately:
+Then add keybindings for rofi programs that we are installed lately:
 
 ```python
 Key([mod], "m", lazy.spawn("rofi -show run")),
