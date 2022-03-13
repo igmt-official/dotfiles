@@ -560,3 +560,28 @@ line you can use:
 ```bash
 ls ~/.local/share/Trash/files
 ```
+
+## Multimedia
+
+There are dozens of programs for multimedia stuff, check
+[this page](https://wiki.archlinux.org/index.php/List_of_applications/Multimedia).
+
+### Images
+
+For image previews, one of the best that I could find is
+[geeqie](https://www.archlinux.org/packages/extra/x86_64/geeqie/):
+
+```bash
+sudo pacman -S geeqie
+```
+
+### Video and audio
+
+No doubt
+[vlc](https://wiki.archlinux.org/index.php/VLC_media_player_(Espa%C3%B1ol))
+is exactly what you need:
+
+```bash
+sudo pacman -S vlc
+```
+
