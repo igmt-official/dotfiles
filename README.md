@@ -326,7 +326,7 @@ feh --bg-scale path/to/wallpaper
 ## Font
 
 Download Nerd-Font:
-Go to [NerdFont](nerdfonts.com/) and hit downloads. This will give you a page where you can preview different fonts.
+Go to **[NerdFont](nerdfonts.com/)** and hit downloads. This will give you a page where you can preview different fonts.
 Once you find a font you like, hit Download on the font to save it as a .zip.
 
 Setup the File Path:
@@ -354,5 +354,172 @@ To reload the fonts without rebooting you can run as root:
 fc-cache -fv
 ```
 
-Now try to change your font in terminal and try to copy and paste icon from [NerdFont](nerdfonts.com/).
+Now try to change your font in terminal and try to copy and paste icon from **[NerdFont](nerdfonts.com/)**.
 
+## Audio
+
+There is no audio at this point, we need
+**[pulseaudio](https://wiki.archlinux.org/index.php/PulseAudio)**.
+I suggest also installing a graphical program to control audio like
+**[pavucontrol](https://www.archlinux.org/packages/extra/x86_64/pavucontrol/)**,
+because we don't have keybindings for that yet:
+
+```bash
+sudo pacman -S pulseaudio pavucontrol
+```
+
+On Arch,
+[pulseaudio is enabled by default](https://wiki.archlinux.org/index.php/PulseAudio#Running),
+but you might need to reboot in order for it to actually start. After rebooting,
+you can open *pavucontrol* through *rofi*, unmute the audio, and you should be
+just fine.
+
+Now you can set up keybindings for *pulseaudio*, open Qtile's config.py and add
+these keys:
+
+```python
+# Volume
+Key([], "XF86AudioLowerVolume", lazy.spawn(
+    "pactl set-sink-volume @DEFAULT_SINK@ -5%"
+)),
+Key([], "XF86AudioRaiseVolume", lazy.spawn(
+    "pactl set-sink-volume @DEFAULT_SINK@ +5%"
+)),
+Key([], "XF86AudioMute", lazy.spawn(
+    "pactl set-sink-mute @DEFAULT_SINK@ toggle"
+)),
+```
+
+Restart Qtile with **mod + control + r** and your keybindings should work.
+
+## Brightness
+
+If
+you're on a laptop, you might also want to control the brightness of your screen,
+and for that I recommend
+**[brightnessctl](https://www.archlinux.org/packages/community/x86_64/brightnessctl/)**:
+
+```bash
+sudo pacman -S brightnessctl
+```
+
+You can add these keybindings and restart Qtile after:
+
+```python
+# Brightness
+Key([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
+Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+```
+
+## Monitors
+
+If you have a multi-monitor system, you surely want to use all your screens.
+Here's how **[xrandr](https://wiki.archlinux.org/index.php/Xrandr)** CLI works:
+
+Install xrander:
+```bash
+sudo pacman -S xrander
+```
+
+List all available outputs and resolutions
+```bash
+xrandr
+# Now because this is my setup, i have different situation, i have external monitor, and my laptop display is broke, so here's my settings.
+xrandr --output LVDS-1 --off --output HDMI-1 --mode 1920x1080 --primary # This will turn off my laptop display and make it primary my external monitor.
+```
+
+Now here's the thing, this is only my optional, because i don't use multi monitor,
+but if you want to activate multi monitor then procceed in this steps.
+
+We need to specify the position for each output, otherwise it will default to
+0x0, and all your outputs will be overlapped. Now if you don't want to calculate pixels
+and stuff you need a GUI like
+**[arandr](https://www.archlinux.org/packages/community/any/arandr/)**:
+
+```bash
+sudo pacman -S arandr
+```
+
+Open it with *rofi*, arrange your screens however you want, and then you can
+save that layout, which will basically give you a shell script with the exact
+*xrandr* command that you need. Save that script, but don't click "apply" just
+yet.
+
+For a multi-monitor system, it's recommended to create an instance of a
+*Screen* object for each monitor in your Qtile config.
+
+You'll find an array called *screens* which contains only one object
+initialized with a bar at the bottom. Inside that bar you can see the default
+widgets that come with it.
+
+Add as many screens as you have and copy-paste all widgets, later you can
+customize them. Now you can go back to arandr, click *apply*, and then restart
+Qtile.
+
+Now your multi-monitor system should work.
+
+## Network
+
+We have configured the network through *nmcli*, but a graphical frontend is
+more friendly. I use
+**[nm-applet](https://wiki.archlinux.org/index.php/NetworkManager#nm-applet)**:
+
+```bash
+sudo pacman -S network-manager-applet
+```
+
+## Systray
+
+By default, you have a system tray in Qtile, but there's nothing running in it.
+You can launch the programs we've just installed like so:
+
+```bash
+nm-applet &
+```
+
+Now you should see icons that you can click to configure drives and networking.
+Optionally, you can install tray icons for volume and battery:
+
+In qtile we have default systray, this is only optional
+Installed volume and battery:
+
+```bash
+sudo pacman -S volumeicon cbatticon
+```
+
+Launch it:
+
+```bash
+volumeicon &
+cbatticon &
+```
+
+## Xinitrc
+
+As I have mentioned before, all these changes are not permanent. In order to
+make them permanent, we need a couple things. First, install
+**[xinit](https://wiki.archlinux.org/index.php/Xinit)**:
+
+
+```bash
+sudo pacman -S xorg-xinit
+```
+
+Now you can use *~/.xinitrc* to run programs before your window manager starts:
+
+```bash
+touch ~/.xinitrc
+```
+
+For example, if you place this in *~.xinitrc*:
+
+```bash
+xrandr --output LVDS-1 --off --output HDMI-1 --mode 1920x1080 --primary &
+setxkbmap es &
+nm-applet &
+volumeicon &
+cbatticon &
+```
+
+Every time you login you will have all systray utilities, your keyboard layout
+and monitors set.
