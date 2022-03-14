@@ -306,7 +306,7 @@ Checkout my custom Qtile config
 But before that I would recommend configuring basic utilities like audio,
 battery, mounting drives, etc.
 
-# Qtile basic system utilities
+# Qtile Basic System Utilities
 In this section we will cover some software that almost everybody needs on their system.
 
 ## Wallpaper
