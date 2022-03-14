@@ -7,7 +7,7 @@ my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
 - [Qtile Installation](#qtile-installation)
 - [Qtile Basic System Utilities](#qtile-basic-system-utilities)
   - [Wallpaper](##wallpaper)
-  - [Fonts](#fonts)
+  - [Font](#font)
   - [Audio](#audio)
   - [Audio](#brightness)
   - [Monitors](#monitors)
