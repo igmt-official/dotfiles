@@ -6,4 +6,4 @@ For my launcher i use rofi, to installed rofi use this command:
 sudo pacman -S rofi
 ```
 
-For customizing rofi, just go to this **[Adi1090x](https://github.com/adi1090x/rofi#installation** and follow the steps.
+For customizing rofi, just go to this **[Adi1090x](https://github.com/adi1090x/rofi#installation)** and follow the steps.
