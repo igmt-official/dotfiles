@@ -1,5 +1,26 @@
 my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
 
+# Table of Contents
+
+- [Overview](#overview)
+- [Arch installation](#arch-installation)
+- [Qtile Installation](#qtile-installation)
+- [Qtile Basic System Utilities](#qtile-basic-system-utilities)
+  - [Wallpaper](#wallpaper)
+  - [Fonts](#fonts)
+  - [Audio](#audio)
+  - [Audio](#brightness)
+  - [Monitors](#monitors)
+  - [Network](#network)
+  - [Systray](#systray)
+  - [Xinitrc](#xinitrc)
+  - [File Manager](#file-manager)
+  - [Trash](#trash)
+  - [Multimedia](#multimedia)
+    - [Images](#images)
+    - [Video and audio](#video-and-audio)
+  - [Color Picker](#color-picker)
+
 # Overview
 
 This guide will walk you through the process of building a desktop environment
