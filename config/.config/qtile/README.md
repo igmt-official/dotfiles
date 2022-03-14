@@ -8,10 +8,12 @@ For my launcher i use rofi, to installed rofi use this command:
 sudo pacman -S rofi
 ```
 
-For customizing rofi, just go to this link **[Adi1090x](https://github.com/adi1090x/rofi#installation)** and follow the steps.
+If you want to use my theme, just go to this link **[Adi1090x](https://github.com/adi1090x/rofi#installation)** and follow the steps for installation.
 
-After you pick your own theme, add this line in your keybinding:
+After installation, copy my ```launcher.sh``` on this link **[rofi](https://github.com/igmt-official/dotfiles/tree/main/config/.config/rofi/launchers/colorful)**,
+after that paste it to this directory ```~/.config/rofi/launchers/colorful/```.
 
+And for my keybinding, i had it already on my ```keys.py``` but if you want to set it on your own ```.py``` files, add this line.
 ```python
 ([mod], "m", lazy.spawn(os.path.expanduser('~/.config/rofi/launchers/colorful/launcher.sh'))),
 ```
