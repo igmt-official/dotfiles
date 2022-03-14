@@ -347,7 +347,7 @@ feh --bg-scale path/to/wallpaper
 ## Font
 
 Download Nerd-Font:
-Go to **[NerdFont](nerdfonts.com/)** and hit downloads. This will give you a page where you can preview different fonts.
+Go to **[NerdFont](https://www.nerdfonts.com/font-downloads)** and hit downloads. This will give you a page where you can preview different fonts.
 Once you find a font you like, hit Download on the font to save it as a .zip.
 
 Setup the File Path:
@@ -375,7 +375,7 @@ To reload the fonts without rebooting you can run as root:
 fc-cache -fv
 ```
 
-Now try to change your font in terminal and try to copy and paste icon from **[NerdFont](nerdfonts.com/)**.
+Now try to change your font in terminal and try to copy and paste icon from **[NerdFont](https://www.nerdfonts.com/font-downloads)**.
 
 ## Audio
 
