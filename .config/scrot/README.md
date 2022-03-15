@@ -9,3 +9,9 @@ Copy my configs:
 ```bash
 cp -r dotfiles/.config/scrot ~/.config
 ```
+
+And make it excutable script:
+
+```bash
+chmod +x screenshot
+```
