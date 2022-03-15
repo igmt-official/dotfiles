@@ -32,10 +32,10 @@ sudo pacman -S rofi
 
 ## File Manager
 
-I'm using Nautilus:
+I'm using **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
 ```bash
-sudo pacman -S nautilus
+sudo pacman -S thunar
 ```
 
 ## Browser
