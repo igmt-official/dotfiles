@@ -19,6 +19,7 @@ cp -r dotfiles/.config/qtile ~/.config
 If you only want specific features from my qtile customized, you can check it below.
 
 ## Application Launcher
+
 For my launcher i use rofi, to installed rofi use this command:
 
 ```bash
@@ -33,4 +34,12 @@ after that paste it to this directory ```~/.config/rofi/launchers/colorful/```.
 And for my keybinding, i had it already on my ```keys.py``` but if you want to set it on your own ```.py``` files, add this line.
 ```python
 ([mod], "m", lazy.spawn(os.path.expanduser('~/.config/rofi/launchers/colorful/launcher.sh'))),
+```
+
+## File Manager
+
+I'm using Nautilus, to install it:
+
+```bash
+sudo pacman -S nautilus
 ```
