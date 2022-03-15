@@ -51,17 +51,17 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ([mod, "shift"], "Return", lazy.spawn("dmenu_run -p 'Run: '")),
 
     # Menu
-    ([mod], "m", lazy.spawn(os.path.expanduser('~/.config/rofi/launchers/colorful/launcher.sh'))),
-    # ([mod], "m", lazy.spawn("rofi -show drun")),
+    # ([mod], "m", lazy.spawn(os.path.expanduser('~/.config/rofi/launchers/colorful/launcher.sh'))),
+    ([mod], "m", lazy.spawn("rofi -show drun")),
 
     # Window Nav
-    # ([mod, "shift"], "m", lazy.spawn("rofi -show")),
+    ([mod, "shift"], "m", lazy.spawn("rofi -show")),
 
     # Browser
     ([mod], "b", lazy.spawn("qutebrowser")),
 
     # File Explorer
-    # ([mod], "e", lazy.spawn("pcmanfm")),
+    ([mod], "e", lazy.spawn("Thunar")),
 
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
@@ -71,8 +71,15 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ([mod, "shift"], "r", lazy.spawn("redshift -x")),
 
     # Screenshot
+    # ([mod], "s", lazy.spawn('screenshot')),
+    # ([mod, "shift"], "s", lazy.spawn('screenshot select')),
+    # ([mod, "control", "shift"], "s", lazy.spawn('screenshot window')),
+    ([mod], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot'))),
+    ([mod, "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot select'))),
+    ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))),
     # ([mod], "s", lazy.spawn("scrot")),
     # ([mod, "shift"], "s", lazy.spawn("scrot -s")),
+    # ([mod, "control", "shift"], "s", lazy.spawn("scrot --focused")),
 
     # ------------ Hardware Configs ------------
 
@@ -88,6 +95,6 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     )),
 
     # Brightness
-    ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
-    ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
+    # ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
+    # ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]]
