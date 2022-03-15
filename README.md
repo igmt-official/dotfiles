@@ -30,6 +30,7 @@ git clone https://github.com/igmt-official/dotfiles/.config/qtile.git
     - [Video and audio](#video-and-audio)
   - [Color Picker](#color-picker)
 - [AUR Helper](#aur-helper)
+- [GTK Theming](#gtk-theming)
 
 # Overview
 
@@ -643,7 +644,7 @@ any piece of software on this planet that was meant to run on Linux.
 
 # GTK Theming
 
-Install Dependencies:
+Install ```Gtk2``` and ```Gtk3```:
 
 ```bash
 sudo pacman -S gtk2
@@ -679,4 +680,26 @@ gtk-icon-theme-name = "Sample-Theme-Icon"
 # ~/.config/gtk-3.0/settings.ini
 gtk-theme-name = Sample-Theme
 gtk-icon-theme-name = Sample-Theme-Icon
+```
+
+Make sure not to mistype the names of your themes and icons, they should
+match the names of the directories where they are located, the ones you can
+see in this output:
+
+```bash
+ls /usr/share/themes
+ls /usr/share/icons
+```
+
+Remember that you will only see the new theme if you log in again.
+There are also graphical frontends for changing themes, I just prefer the
+traditional way of editing files though, but you can use
+**[lxappearance](https://www.archlinux.org/packages/community/x86_64/lxappearance/)**,
+which is a desktop environment independent GUI for this task, and it lets you
+preview themes.
+
+Installing ```Lxappearance```:
+
+```bash
+sudo pacman -S lxappearance
 ```
