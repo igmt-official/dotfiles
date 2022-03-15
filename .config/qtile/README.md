@@ -18,7 +18,7 @@ pip install psutil # Required for some widget on the bar.
 Clone this repository and copy my configs:
 
 ```bash
-git clone https://github.com/igmt-official/dotfiles.git
+git clone https://github.com/igmt-official/dotfiles/.config/qtile.git
 cp -r dotfiles/.config/qtile ~/.config
 ```
 
