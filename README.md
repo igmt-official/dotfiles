@@ -1,6 +1,6 @@
 my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
 
-# All Config
+# Repository
 
 Clone my repository, and go to this folder **[.config](https://github.com/igmt-official/dotfiles/tree/main/.config)**,
 and find what you want config, each config already have installion guide.
