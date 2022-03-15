@@ -1,5 +1,6 @@
 #!/bin/bash
 
-# Extras
-nitrogen --restore &
+# EXTRAS
+volumeicon &
+nm-applet &
 picom --experimental-backend &
