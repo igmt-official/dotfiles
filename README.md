@@ -20,6 +20,7 @@ my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
     - [Images](#images)
     - [Video and audio](#video-and-audio)
   - [Color Picker](#color-picker)
+- [AUR Helper](#aur-helper)
 
 # Overview
 
@@ -611,3 +612,22 @@ For who want to build their own palette, install color picker.
 ```bash
 sudo pacman -S gcolor3
 ```
+
+# AUR Helper
+
+Now that you have some software that allows you tu use your computer without
+losing your patience, it's time to do more interesting stuff. First, install an
+**[AUR helper](https://wiki.archlinux.org/index.php/AUR_helpers)**, I use
+**[yay](https://github.com/Jguer/yay)**:
+
+```bash
+sudo pacman -S base-devel git # (Which is we installed lately in our installation arch linux)
+cd /opt/
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R username:username yay-git/
+cd yay-git
+makepkg -si
+```
+
+With an *Arch User Repository helper*, you can basically install
+any piece of software on this planet that was meant to run on Linux.
