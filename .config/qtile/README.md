@@ -20,11 +20,11 @@ If you only want specific features from my qtile customized, you can check it be
 
 ## Fonts
 
-I'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
+**[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
 ## Application Launcher
 
-For my launcher i use **[Rofi](https://wiki.archlinux.org/title/Rofi)**:
+**[Rofi](https://wiki.archlinux.org/title/Rofi)**:
 
 ```bash
 sudo pacman -S rofi
@@ -32,7 +32,7 @@ sudo pacman -S rofi
 
 ## File Manager
 
-I'm using **[Thunar](https://wiki.archlinux.org/title/thunar)**:
+**[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
 ```bash
 sudo pacman -S thunar
@@ -40,7 +40,7 @@ sudo pacman -S thunar
 
 ## Browser
 
-I'm using **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
+**[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
 
 ```bash
 sudo pacman -S qutebrowser
