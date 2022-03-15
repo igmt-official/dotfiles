@@ -69,6 +69,16 @@ cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
 cp -r dotfiles/.config/gtk-3.0 ~/.config
 ```
 
+### Notification
+
+Download **Dunst**.
+
+And if you want to use my config, just copy my config **[Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)**
+
+```bash
+sudo pacman -S dunst
+```
+
 ### Screenshot
 
 Download **Scrot**.
