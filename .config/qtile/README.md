@@ -1,6 +1,6 @@
 # Qtile (Arch Based)
 
-# Installing My Qtile
+## Installing My Qtile
 
 If you want to use my own config, then follow all my steps.
 
@@ -22,7 +22,7 @@ git clone https://github.com/igmt-official/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
 ```
 
-# My Qtile Application
+## My Qtile Application
 
 If you only want specific features from my qtile customized, you can check it below.
 
@@ -33,6 +33,9 @@ If you only want specific features from my qtile customized, you can check it be
 ```bash
 sudo pacman -S rofi
 ```
+
+If you want to use dracula theme like on my rofi,
+just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/rofi)**.
 
 ### File Manager
 
