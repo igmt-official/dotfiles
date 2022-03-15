@@ -34,7 +34,7 @@ Xephyr -br -ac -noreset -screen 1280x720 :1 &
 DISPLAY=:1 qtile
 ```
 
-## My Qtile Application
+## My Qtile Features
 
 If you only want specific features from my qtile customized, you can check it below.
 
@@ -85,6 +85,8 @@ And if you want to use my config, just copy my config **[Dunst](https://github.c
 ```bash
 sudo pacman -S dunst
 ```
+
+Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/main/.local/bin)**, for wifi, screenshot, and volume notificiation.
 
 ### Screenshot
 
