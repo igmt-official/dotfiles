@@ -1,5 +1,14 @@
 my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
 
+# All Config
+
+Clone my repository, and go to this folder **[.config](https://github.com/igmt-official/dotfiles/tree/main/.config)**,
+and find what you want config, each config already have installion guide.
+
+```bash
+git clone https://github.com/igmt-official/dotfiles/.config/qtile.git
+```
+
 # Table of Contents
 
 - [Overview](#overview)
