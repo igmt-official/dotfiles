@@ -13,7 +13,7 @@ git clone https://github.com/igmt-official/dotfiles/.config/qtile.git
 Copy my configs:
 
 ```bash
-cp -r dotfiles/.config/rofi ~/.config
+cp -r dotfiles/.config/qtile ~/.config
 ```
 
 Install Dependencies:
