@@ -7,7 +7,7 @@ from .colors import colors
 
 
 layout_conf = {
-    'border_focus': colors['bg'],
+    'border_focus': colors['purple'],
     'border_width': 2,
     'margin': 10
 }
@@ -29,6 +29,7 @@ layouts = [
 floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
+        Match(wm_class='Thunar'),
         Match(wm_class='Gcolor3'),
         Match(wm_class='confirmreset'),
         Match(wm_class='makebranch'),
@@ -38,5 +39,5 @@ floating_layout = layout.Floating(
         Match(title='pinentry'),
 
     ],
-    border_focus=colors['bg']
+    border_focus=colors['background']
 )
