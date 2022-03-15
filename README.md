@@ -18,7 +18,7 @@ https://github.com/igmt-official/dotfiles.git
   - [Wallpaper](##wallpaper)
   - [Font](#font)
   - [Audio](#audio)
-  - [Audio](#brightness)
+  - [Brightness](#brightness)
   - [Monitors](#monitors)
   - [Network](#network)
   - [Systray](#systray)
