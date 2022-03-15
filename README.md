@@ -720,5 +720,4 @@ export PATH=$HOME/.local/bin:$PATH
 ```
 
 Take note! I'm not talking about executable script, i'm talking about custom script that can access in any package,
-like **Scrot** or **Volume**.
-```
+like **Scrot**, **Dunst** or **Volume**.
