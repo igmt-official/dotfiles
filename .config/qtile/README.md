@@ -28,7 +28,7 @@ If you only want specific features from my qtile customized, you can check it be
 
 ### Application Launcher
 
-**[Rofi](https://wiki.archlinux.org/title/Rofi)**:
+Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**:
 
 ```bash
 sudo pacman -S rofi
@@ -39,7 +39,7 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 
 ### File Manager
 
-**[Thunar](https://wiki.archlinux.org/title/thunar)**:
+Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
 ```bash
 sudo pacman -S thunar
@@ -47,7 +47,7 @@ sudo pacman -S thunar
 
 ### Browser
 
-**[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
+Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
 
 ```bash
 sudo pacman -S qutebrowser
@@ -55,8 +55,8 @@ sudo pacman -S qutebrowser
 
 ### Theme
 
-**[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**
+Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**
 
 ### Fonts
 
-**[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
+Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
