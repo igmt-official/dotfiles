@@ -38,6 +38,17 @@ DISPLAY=:1 qtile
 
 If you only want specific features from my qtile customized, you can check it below.
 
+### Terminal
+
+Install **Alacritty**.
+
+If you want to use dracula theme like on my alacritty,
+just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/alacritty)**.
+
+```bash
+sudo pacman -S alacritty
+```
+
 ### Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
