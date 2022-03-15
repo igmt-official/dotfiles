@@ -1,7 +1,7 @@
 If you not downloaded yet my repository:
 
 ```bash
-https://github.com/igmt-official/dotfiles.git
+git clone https://github.com/igmt-official/dotfiles.git
 ```
 
 Copy my configs:
