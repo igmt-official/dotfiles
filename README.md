@@ -673,10 +673,10 @@ these lines:
 
 ```ini
 # ~/.gtkrc-2.0
-gtk-theme-name = "Material-Black-Blueberry"
-gtk-icon-theme-name = "Material-Black-Blueberry-Suru"
+gtk-theme-name = "Sample-Theme"
+gtk-icon-theme-name = "Sample-Theme-Icon"
 
 # ~/.config/gtk-3.0/settings.ini
-gtk-theme-name = Material-Black-Blueberry
-gtk-icon-theme-name = Material-Black-Blueberry-Suru
+gtk-theme-name = Sample-Theme
+gtk-icon-theme-name = Sample-Theme-Icon
 ```
