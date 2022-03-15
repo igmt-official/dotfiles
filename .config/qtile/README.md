@@ -71,7 +71,7 @@ cp -r dotfiles/.config/gtk-3.0 ~/.config
 
 ### Notification
 
-Download **Dunst**.
+Install **Dunst**.
 
 And if you want to use my config, just copy my config **[Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)**
 
@@ -81,7 +81,7 @@ sudo pacman -S dunst
 
 ### Screenshot
 
-Download **Scrot**.
+Install **Scrot**.
 ```bash
 sudo pacman -S scrot
 ```
