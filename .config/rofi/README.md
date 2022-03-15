@@ -1,6 +1,11 @@
-Clone this repository and copy my configs:
+If you not downloaded yet my repository:
 
 ```bash
-git clone https://github.com/igmt-official/dotfiles/.config/rofi.git
+git clone https://github.com/igmt-official/dotfiles/.config/qtile.git
+```
+
+Copy my configs:
+
+```bash
 cp -r dotfiles/.config/rofi ~/.config
 ```
