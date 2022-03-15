@@ -18,9 +18,13 @@ cp -r dotfiles/.config/qtile ~/.config
 
 If you only want specific features from my qtile customized, you can check it below.
 
+## Fonts
+
+I'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
+
 ## Application Launcher
 
-For my launcher i use Rofi:
+For my launcher i use **[Rofi](https://wiki.archlinux.org/title/Rofi)**:
 
 ```bash
 sudo pacman -S rofi
@@ -36,7 +40,7 @@ sudo pacman -S nautilus
 
 ## Browser
 
-I'm using QuteBrowser
+I'm using **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
 
 ```bash
 sudo pacman -S qutebrowser
