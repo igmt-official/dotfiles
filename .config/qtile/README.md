@@ -18,6 +18,10 @@ cp -r dotfiles/.config/qtile ~/.config
 
 If you only want specific features from my qtile customized, you can check it below.
 
+## Theme
+
+**[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**
+
 ## Fonts
 
 **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
