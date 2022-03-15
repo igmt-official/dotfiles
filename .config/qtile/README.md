@@ -3,9 +3,12 @@ If you want to use my own config, then follow all my steps.
 
 Install Dependencies:
 
+First download the font that i'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**.
+
+Now install
+
 ```bash
 sudo pacman -S python-pip # This is for pip installer.
-yay -S nerd-fonts-ubuntu-mono # This is the font im using.
 pip install psutil # Required for some widget on the bar.
 ```
 
