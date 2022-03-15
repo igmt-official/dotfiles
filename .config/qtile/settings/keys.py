@@ -1,7 +1,9 @@
-# Qtile keybindings
-
+import os
+from libqtile import qtile
 from libqtile.config import Key
 from libqtile.lazy import lazy
+
+# Qtile keybindings
 
 mod = "mod4"
 
@@ -38,13 +40,18 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # Restart Qtile
     ([mod, "control"], "r", lazy.reload_config()),
-    ([mod, "control" + "shift"], "r", lazy.restart()),
+    ([mod, "control", "shift"], "r", lazy.restart()),
+
     ([mod, "control"], "q", lazy.shutdown()),
     ([mod], "r", lazy.spawncmd()),
 
     # ------------ App Configs ------------
 
+    # Dmenu
+    # ([mod, "shift"], "Return", lazy.spawn("dmenu_run -p 'Run: '")),
+
     # Menu
+    ([mod], "m", lazy.spawn(os.path.expanduser('~/.config/rofi/launchers/colorful/launcher.sh'))),
     # ([mod], "m", lazy.spawn("rofi -show drun")),
 
     # Window Nav
