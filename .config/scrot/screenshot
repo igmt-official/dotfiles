@@ -1,5 +1,4 @@
 #! /bin/sh
-# Replace your own directory
 output='/home/ali/Pictures/Screenshots/%Y-%m-%d-%T-screenshot.png'
 
 case "$1" in
@@ -7,3 +6,5 @@ case "$1" in
 	"window") scrot "$output" --focused --border || exit ;;
 	*) scrot "$output" || exit ;;
 esac
+
+notify-send "Screenshot taken."
