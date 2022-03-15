@@ -31,6 +31,7 @@ https://github.com/igmt-official/dotfiles.git
   - [Color Picker](#color-picker)
 - [AUR Helper](#aur-helper)
 - [GTK Theming](#gtk-theming)
+- [Custom Script](#custome-script)
 
 # Overview
 
@@ -702,4 +703,22 @@ Installing ```Lxappearance```:
 
 ```bash
 sudo pacman -S lxappearance
+```
+
+# Custom Script
+
+To use your custom script, make a directory where you put your **Custom Script**, example:
+
+```bash
+mkdir -p $HOME/.local/bin # This will create a bin folder in .local
+```
+
+Now we should export that path in our **$PATH**, put this line in our **.bashrc**:
+
+```bash
+export PATH=$HOME/.local/bin:$PATH
+```
+
+Take note! I'm not talking about executable script, i'm talking about custom script that can access in any package,
+like **Scrot** or **Volume**.
 ```
