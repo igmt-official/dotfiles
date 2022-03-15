@@ -31,7 +31,7 @@ https://github.com/igmt-official/dotfiles.git
   - [Color Picker](#color-picker)
 - [AUR Helper](#aur-helper)
 - [GTK Theming](#gtk-theming)
-- [Custom Script](#custome-script)
+- [Custom Script](#custom-script)
 
 # Overview
 
