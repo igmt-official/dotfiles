@@ -69,11 +69,6 @@ cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
 cp -r dotfiles/.config/gtk-3.0 ~/.config
 ```
 
-
-### Fonts
-
-Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
-
 ### Screenshot
 
 Download **Scrot**.
@@ -89,3 +84,6 @@ And if you want to use my script for my key binding, copy my script **[Scrot](ht
     ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
 ```
 
+### Fonts
+
+Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
