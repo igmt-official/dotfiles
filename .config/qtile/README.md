@@ -27,6 +27,13 @@ sudo pacman -S python-pip # This is for pip installer.
 pip install psutil # Required for some widget on the bar.
 ```
 
+Test it with **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
+
+```bash
+Xephyr -br -ac -noreset -screen 1280x720 :1 &
+DISPLAY=:1 qtile
+```
+
 ## My Qtile Application
 
 If you only want specific features from my qtile customized, you can check it below.
