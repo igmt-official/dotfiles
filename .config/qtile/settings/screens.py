@@ -9,27 +9,27 @@ from libqtile.config import Screen
 from .colors import colors
 
 decor = {
-       "background": colors['darkBg'],
+       "background": colors['background'],
        "borderwidth": 3,
        "padding": 5,
        "highlight_method": 'line',
        "rounded": "true",
        "disable_drag": True,
-       "inactive": colors['inactive'],
-       "active": colors['active'],
-       "highlight_color": colors['darkBg'],
-       "this_current_screen_border": colors['fg'],
-       "block_highlight_text_color": colors['fg'],
-       # "this_screen_border": colors['bg'],
-       # "other_current_screen_border": colors['bg'],
-       # "other_screen_border": colors['bg'],
-       # "this_screen_border": colors['bg'],
+       "inactive": colors['comment'],
+       "active": colors['cyan'],
+       "highlight_color": colors['background'],
+       "this_current_screen_border": colors['purple'],
+       "block_highlight_text_color": colors['purple'],
+       # "this_screen_border": colors['foreground'],
+       # "other_current_screen_border": colors['foreground'],
+       # "other_screen_border": colors['foreground'],
+       # "this_screen_border": colors['foreground'],
        # "decorations": [
        #        RectDecoration(
        #               use_widget_background=True, 
        #               radius=17, 
        #               filled=True, 
-       #               colour = colors['darkBg'], 
+       #               colour = colors['background'], 
        #               padding_y = 5
        #               )
        #        ],
@@ -37,165 +37,193 @@ decor = {
 
 screens = [
        Screen(
-              wallpaper = 'Downloads/4431856.jpg',
+              wallpaper = 'Downloads/Wallpaper/arch.png',
               wallpaper_mode = 'fill',
               top = bar.Bar(
               [
                      widget.Sep(
                             linewidth = 0,
                             padding = 5,
-                            foreground = colors['fg'],
-                            background = colors['fg']
+                            foreground = colors['background'],
+                            background = colors['background']
                             ),
                      widget.TextBox(
                             text = "",
                             padding = 5,
-                            fontsize = 35,
-                            foreground = colors['darkBg'],
-                            background = colors['fg']
+                            fontsize = 30,
+                            foreground = colors['purple'],
+                            background = colors['background']
                             ),
-                     widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
-                            text = '\uE0B0',
-                            background = colors['darkBg'],
-                            foreground = colors['fg'],
-                            padding = 0,
-                            fontsize = 25
+                     # widget.TextBox(
+                     #        font = "UbuntuMono Nerd Font",
+                     #        text = '\uE0B0',
+                     #        background = colors['background'],
+                     #        foreground = colors['background'],
+                     #        padding = 0,
+                     #        fontsize = 25
+                     #        ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['background'],
+                            background = colors['background']
                             ),
                      widget.GroupBox(
                             **decor,
-                            fontsize = 25
+                            fontsize = 20
                             ),
                      widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
                             text = '\uE0B0',
-                            background = colors['bg'],
-                            foreground = colors['darkBg'],
+                            background = colors['current_line'],
+                            foreground = colors['background'],
                             padding = 0,
                             fontsize = 25
                             ),
                      widget.Sep(
                             linewidth = 0,
                             padding = 5,
-                            foreground = colors['fg'],
-                            background = colors['bg']
+                            foreground = colors['current_line'],
+                            background = colors['current_line']
                             ),
                      widget.WindowName(
                             padding = 5,
-				background = colors['bg'],
-				foreground = colors['fg'],
+				background = colors['current_line'],
+				foreground = colors['foreground'],
 				empty_group_string = "Desktop",
 				max_chars = 130,
 				),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['current_line'],
+                            foreground = colors['cyan'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.TextBox(
+                            font = "JetBrainsMono Bold",
+                            text = '',
+                            background = colors['cyan'],
+                            foreground = colors['background'],
+                            fontsize = 20
+                            ),
+                     widget.CheckUpdates(
+                            font = "JetBrainsMono Bold",
+                            update_interval = 1800,
+                            distro = "Arch",
+                            display_format = "{updates} ",
+                            foreground = colors['background'],
+                            colour_have_updates = colors['red'],
+                            colour_no_updates = colors['background'],
+                            mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty' + ' -e sudo pacman -Syu')},
+                            padding = 5,
+                            background = colors['cyan']
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['cyan'],
+                            foreground = colors['purple'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.TextBox(
+                            font = "JetBrainsMono Bold",
+                            text = '',
+                            background = colors['purple'],
+                            foreground = colors['background'],
+                            fontsize = 25
+                            ),
+                     widget.ThermalSensor(
+                            font = "JetBrainsMono Bold",
+                            foreground = colors['background'],
+                            background = colors['purple'],
+                            threshold = 90,
+                            fmt = '{}',
+                            padding = 5
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['purple'],
+                            foreground = colors['cyan'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.TextBox(
+                            font = "JetBrainsMono Bold",
+                            text = '',
+                            background = colors['cyan'],
+                            foreground = colors['background'],
+                            fontsize = 20
+                            ),
+                     widget.Memory(
+                            font = "JetBrainsMono Bold",
+                            foreground = colors['background'],
+                            mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("alacritty" + ' -e htop')},
+                            fmt = '{}',
+                            padding = 5,
+                            background = colors['cyan']
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['cyan'],
+                            foreground = colors['purple'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.TextBox(
+                            font = "JetBrainsMono Bold",
+                            text = '',
+                            background = colors['purple'],
+                            foreground = colors['background'],
+                            fontsize = 15
+                            ),
+                     widget.CPU(
+                            font = "JetBrainsMono Bold",
+                            foreground = colors['background'],
+                            background = colors['purple'],
+                            format = '{freq_current}GHz {load_percent}%',
+                            padding = 5
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['purple'],
+                            foreground = colors['cyan'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.TextBox(
+                            font = "JetBrainsMono Bold",
+                            text = '',
+                            background = colors['cyan'],
+                            foreground = colors['background'],
+                            fontsize = 20
+                            ),
+                     widget.Clock(
+                            font = "JetBrainsMono Bold",
+                            foreground = colors['background'],
+                            background = colors['cyan'],
+                            format = "%B %d %a %I:%M %p",
+                            padding = 5
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['cyan'],
+                            foreground = colors['current_line'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
                      widget.Systray(
-                            background = colors['bg'],
+                            background = colors['current_line'],
                             padding = 5
                             ),
                      widget.Sep(
                             linewidth = 0,
                             padding = 5,
-                            foreground = colors['fg'],
-                            background = colors['bg']
-                            ),
-                     widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
-                            text = '\uE0B2',
-                            background = colors['bg'],
-                            foreground = colors['fg'],
-                            padding = 0,
-                            fontsize = 25
-                            ),
-                     widget.ThermalSensor(
-                            font = "Ubuntu Mono Nerd Font",
-                            foreground = colors['darkBg'],
-                            background = colors['fg'],
-                            threshold = 90,
-                            fmt = 'Temp: {}',
-                            padding = 5
-                            ),
-                     widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
-                            text = '\uE0B2',
-                            background = colors['fg'],
-                            foreground = colors['darkBg'],
-                            padding = 0,
-                            fontsize = 25
-                            ),
-                     widget.Memory(
-                            font = "Ubuntu Mono Nerd Font",
-                            foreground = colors['fg'],
-                            mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn("alacritty" + ' -e htop')},
-                            fmt = ' {}',
-                            padding = 5,
-                            background = colors['darkBg']
-                            ),
-                     widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
-                            text = '\uE0B2',
-                            background = colors['darkBg'],
-                            foreground = colors['fg'],
-                            padding = 0,
-                            fontsize = 25
-                            ),
-                     widget.CPU(
-                            font = "Ubuntu Mono Nerd Font",
-                            foreground = colors['darkBg'],
-                            background = colors['fg'],
-                            format = ' {freq_current}GHz {load_percent}%',
-                            padding = 5
-                            ),
-                     widget.TextBox(
-                            font = "UbuntuMono Nerd Font",
-                            text = '\uE0B2',
-                            background = colors['fg'],
-                            foreground = colors['darkBg'],
-                            padding = 0,
-                            fontsize = 25
-                            ),
-                     widget.TextBox(
-                            text = '',
-                            background = colors['darkBg'],
-                            foreground = colors['fg'],
-                            padding = 5,
-                            fontsize = 20
-                            ),
-                     widget.CheckUpdates(
-                            font = "Ubuntu Mono Nerd Font",
-                            update_interval = 1800,
-                            distro = "Arch",
-                            display_format = "Updates: {updates} ",
-                            foreground = colors['fg'],
-                            colour_have_updates = colors['fg'],
-                            colour_no_updates = colors['darkBg'],
-                            mouse_callbacks = {'Button1': lambda: qtile.cmd_spawn('alacritty' + ' -e sudo pacman -Syu')},
-                            padding = 5,
-                            background = colors['darkBg']
-                            ),
-                     widget.TextBox(
-                            font = "Ubuntu Mono Nerd Font",
-                            text = '\uE0B2',
-                            background = colors['darkBg'],
-                            foreground = colors['fg'],
-                            padding = 0,
-                            fontsize = 25
-                            ),
-                     widget.TextBox(
-                            text = '',
-                            background = colors['fg'],
-                            foreground = colors['darkBg'],
-                            padding = 5,
-                            fontsize = 20
-                            ),
-                     widget.Clock(
-                            font = "Ubuntu Mono Nerd Font",
-                            foreground = colors['darkBg'],
-                            background = colors['fg'],
-                            format = "%B %d %a %I:%M %p",
-                            padding = 5
+                            foreground = colors['current_line'],
+                            background = colors['current_line']
                             ),
               ],
               24,
-              background = colors['bg'],
+              background = colors['current_line'],
 		margin = [0, 0, 21, 0],
 		),
 		bottom = bar.Gap(18),
