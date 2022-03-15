@@ -60,7 +60,8 @@ sudo pacman -S qutebrowser
 
 ### Theme
 
-Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**
+Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my **[Gtk2](https://github.com/igmt-official/dotfiles/tree/main/.config/gtk-2.0)** and **[Gtk3](https://github.com/igmt-official/dotfiles/tree/main/.config/gtk-3.0)**.
+
 
 ### Fonts
 
