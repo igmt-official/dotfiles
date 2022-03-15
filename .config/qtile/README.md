@@ -1,4 +1,7 @@
 # Qtile (Arch Based)
+
+# Installing My Qtile
+
 If you want to use my own config, then follow all my steps.
 
 Install Dependencies:
@@ -19,17 +22,19 @@ git clone https://github.com/igmt-official/dotfiles.git
 cp -r dotfiles/.config/qtile ~/.config
 ```
 
+# My Qtile Application
+
 If you only want specific features from my qtile customized, you can check it below.
 
-## Theme
+### Theme
 
 **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**
 
-## Fonts
+### Fonts
 
 **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
-## Application Launcher
+### Application Launcher
 
 **[Rofi](https://wiki.archlinux.org/title/Rofi)**:
 
@@ -37,7 +42,7 @@ If you only want specific features from my qtile customized, you can check it be
 sudo pacman -S rofi
 ```
 
-## File Manager
+### File Manager
 
 **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
@@ -45,7 +50,7 @@ sudo pacman -S rofi
 sudo pacman -S thunar
 ```
 
-## Browser
+### Browser
 
 **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
 
