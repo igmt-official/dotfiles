@@ -59,12 +59,14 @@ i just based on my specs desktop, if you are UEFI users then go to youtube there
 Make sure you have an internet, if you have response for that website, then proceed to the next step.
 And if you don't have response on that ping, you don't have an internet, or you're not connected in Ethernet Lan Cable,
 for that search on youtube, because remember this is only my way, i didn't setup my internet in wireless.
+
 ```bash
 ping archlinux.org
 ```
 
 Update the system clock
 Use timedatectl to ensure the system clock is accurate:
+
 ```bash
 timedatectl set-ntp true 
 # To check the service status, use timedatectl status.
@@ -73,12 +75,14 @@ timedatectl set-ntp true
 Partition the disks
 When recognized by the live system, disks are assigned to a block device such as /dev/sda, /dev/nvme0n1 
 or /dev/mmcblk0. To identify these devices, use lsblk or fdisk.
+
 ```bash
 fdisk -l
 # And my block device is "/dev/sda"
 ```
 
 Use fdisk or parted to modify partition tables. For example:
+
 ```bash
 fdisk /dev/the_disk_to_be_partitioned
 # Remember to check your block device such as /dev/sda, /dev/nvme0n1 or /dev/mmcblk0
@@ -86,6 +90,7 @@ fdisk /dev/the_disk_to_be_partitioned
 ```
 
 Now, jus follow my command line, to make our partition.
+
 ```bash
 # Type "o" to create MBR partition.
 # Type "n" then press enter until you see the second "default with random numbers" then type "+2GB" this is will create our "Swapfile Partition".
@@ -99,12 +104,14 @@ Now, jus follow my command line, to make our partition.
 
 Format the partitions
 Once the partitions have been created, each newly created partition must be formatted with an appropriate file system.
+
 ```bash
  mkfs.ext4 /dev/root_partition # This is the our "Root Partition" for me is "mkfs.ext4 /dev/sda2/.
  mkswap /dev/swap_partition # And this is our "Swapfile Partition" for me is "mkswap /dev/sda1/.
  ```
  
  And now we done formatting our partition, next step is to turn on our "Swapfile" and mount "mnt" in our "Root Partition".
+ 
  ```bash
  swapon /dev/swap_partition # To turn on our "Swapfile Partition", for me is "swapon /dev/sda1".
  mount /dev/root_partition /mnt # To mount our "mnt" in our "Root Partition", for me is "mount /dev/sda2 /mnt".
@@ -112,6 +119,7 @@ Once the partitions have been created, each newly created partition must be form
  
 Install essential packages
 Use the pacstrap script to install the base package, Linux kernel and firmware for common hardware:
+
 ```bash
 pacstrap /mnt base linux linux-firmware
 # Wait for the download completed.
@@ -119,18 +127,21 @@ pacstrap /mnt base linux linux-firmware
 
 Fstab
 Generate an fstab file (use -U or -L to define by UUID or labels, respectively):
+
 ```bash
 genfstab -U /mnt >> /mnt/etc/fstab
 ```
 
 Chroot
 Change root into the new system:
+
 ```bash
 arch-chroot /mnt
 ```
 
 Time zone
 Set the time zone:
+
 ```bash
 ln -sf /usr/share/zoneinfo/Region/City /etc/localtime # For me is "ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime".
 # To check available Region, type "ls /usr/share/zoneinfo/Region" and find your Region".
@@ -138,39 +149,46 @@ ln -sf /usr/share/zoneinfo/Region/City /etc/localtime # For me is "ln -sf /usr/s
 ```
 
 Run hwclock to generate /etc/adjtime:
+
 ```bash
 hwclock --systohc
 ```
 
 Now installed our text editor ```nano or vim``` which one you prefer.
+
 ```bash
 pacman -S nano
 ```
 
 Localization.
+
 ```bash
 nano /etc/locale.gen
 # Edit "/etc/locale.gen" and uncomment "en_US.UTF-8 UTF-8" and other needed locales. 
 ```
 
 Generate the locales by running:
+
 ```bash
 locale-gen
 ```
 
 Create the locale.conf file, and set the LANG variable accordingly:
+
 ```bash
 nano /etc/locale.conf
 # Now write this "LANG=en_US.UTF-8" according to your localization then save it.
 ```
 
 Create the hostname file:
+
 ```bash
 nano /etc/hostname
 # Write your prefer hostname for me is "myArch"
 ```
 
 Edit the hosts file:
+
 ```bash
 nano /etc/hosts
 # Now you will see two lines that already writed in there, below of that two lines write this:
@@ -181,18 +199,21 @@ nano /etc/hosts
 
 Root password
 Set the root password:
+
 ```bash
 passwd
 # Type your prefer password.
 ```
 
 Add user and password
+
 ```bash
 useradd -m yourUserName # For me is "useradd -m myArch".
 passwd yourUserName # And type your prefer password.
 ```
 
 User groups
+
 Non-root workstation/desktop users often need to be added to some of following groups to allow access to hardware peripherals and facilitate system administration:
 ```bash
 usermod -aG wheel,audio,video,optical,storage,input,disk yourUserName
@@ -203,7 +224,14 @@ Now installed sudo:
 pacman -S sudo
 ```
 
-Edit ```/etc/sudoers``` with nano or vim by uncommenting this line:
+Edit **Sudo** with nano or vim:
+
+```bash
+EDITOR=nano visudo
+```
+
+Uncommenting this line:
+
 ```bash
 # Find this line:
 
@@ -215,10 +243,10 @@ Edit ```/etc/sudoers``` with nano or vim by uncommenting this line:
 
 ## Uncomment to allow members of group wheel to execute any command
 %wheel ALL=(ALL) ALL
-
 ```
 
 Follow this step this is essentials, this is only for None-UEFI (MBR).
+
 ```bash
 grub-install --target=i386-pc /dev/sda
 # "/dev/sda" is the main disk not the one we created partition.
@@ -245,11 +273,13 @@ pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty fir
 ```
 
 Before we reboot, enable first ```networkmanager```.
+
 ```bash
 systemctl enable NetworkManager
 ```
 
 Now all the setup is finish we will exit and umount and try to reboot and unplug the bootable usb, let see if our Arch Linux will boot normal.
+
 ```bash
 exit
 umount /mnt
@@ -260,11 +290,13 @@ And now we boot normally, try to login your "User and Pass".
 
 # Qtile installation
 Now installed our ```Window Manager``` which is ```Qtile```.
+
 ```bash
 sudo pacman -S qtile
 ```
 
 And setup our ```Qtile``` in ```.xinitrc``` so we can enter in window manager.
+
 ```bash
 # Edit your .xinitrc using your text editor like "nano or vim"
 nano .xinitrc
@@ -421,6 +453,22 @@ Key([], "XF86AudioRaiseVolume", lazy.spawn(
 Key([], "XF86AudioMute", lazy.spawn(
     "pactl set-sink-mute @DEFAULT_SINK@ toggle"
 )),
+```
+
+For a better CLI experience though, I recommend using
+**[pamixer](https://www.archlinux.org/packages/community/x86_64/pamixer/)**:
+
+```bash
+sudo pacman -S pamixer
+```
+
+Now you can turn your keybindings into:
+
+```python
+# Volume
+Key([], "XF86AudioLowerVolume", lazy.spawn("pamixer --decrease 5")),
+Key([], "XF86AudioRaiseVolume", lazy.spawn("pamixer --increase 5")),
+Key([], "XF86AudioMute", lazy.spawn("pamixer --toggle-mute")),
 ```
 
 Restart Qtile with **mod + control + r** and your keybindings should work.
