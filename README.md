@@ -640,3 +640,43 @@ makepkg -si
 
 With an *Arch User Repository helper*, you can basically install
 any piece of software on this planet that was meant to run on Linux.
+
+# GTK Theming
+
+Install Dependencies:
+
+```bash
+sudo pacman -S gtk2
+sudo pacman -S gtk3
+```
+
+You can find GTK themes [on this page](https://www.gnome-look.org/browse/cat/135/).
+Once you have your theme folders downloaded, this is what you do:
+
+```bash
+cd Downloads/
+sudo pacman -S unzip # For unzipping .zip file.
+unzip Sample-Theme.zip
+unzip Sample-Theme-Icon.zip
+rm Sample-Theme*.zip # To delete all Sample-Theme zip file.
+```
+
+Make your themes available
+
+```bash
+sudo mv Sample-Theme /usr/share/themes
+sudo mv Sample-Theme-Icon /usr/share/icons
+```
+
+Now edit **~/.gtkrc-2.0** and **~/.config/gtk-3.0/settings.ini** by adding
+these lines:
+
+```ini
+# ~/.gtkrc-2.0
+gtk-theme-name = "Material-Black-Blueberry"
+gtk-icon-theme-name = "Material-Black-Blueberry-Suru"
+
+# ~/.config/gtk-3.0/settings.ini
+gtk-theme-name = Material-Black-Blueberry
+gtk-icon-theme-name = Material-Black-Blueberry-Suru
+```
