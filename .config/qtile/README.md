@@ -20,7 +20,7 @@ If you only want specific features from my qtile customized, you can check it be
 
 ## Application Launcher
 
-For my launcher i use rofi, to installed rofi use this command:
+For my launcher i use rofi:
 
 ```bash
 sudo pacman -S rofi
@@ -38,7 +38,7 @@ And for my keybinding, i had it already on my ```keys.py``` but if you want to s
 
 ## File Manager
 
-I'm using Nautilus, to install it:
+I'm using Nautilus:
 
 ```bash
 sudo pacman -S nautilus
