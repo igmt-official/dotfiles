@@ -58,6 +58,8 @@ Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**:
 sudo pacman -S qutebrowser
 ```
 
+Copy my **[Conifg](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)** for the theme.
+
 ### Theme
 
 Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my **[Gtk2](https://github.com/igmt-official/dotfiles/tree/main/.config/gtk-2.0)** and **[Gtk3](https://github.com/igmt-official/dotfiles/tree/main/.config/gtk-3.0)**.
