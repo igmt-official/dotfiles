@@ -34,6 +34,7 @@ If you only want specific features from my qtile customized, you can check it be
 ### Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
+
 If you want to use dracula theme like on my rofi,
 just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/rofi)**.
 
@@ -52,6 +53,7 @@ sudo pacman -S thunar
 ### Browser
 
 Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**.
+
 Copy my **[Conifg](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)** for the theme.
 
 ```bash
