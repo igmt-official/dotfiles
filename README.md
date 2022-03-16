@@ -1,5 +1,9 @@
 my dotfiles inspired by: https://github.com/antoniosarosi/dotfiles
 
+![2022-03-17-00:26:28-screenshot](https://user-images.githubusercontent.com/96023410/158641913-a0040b6d-d6b6-4e35-b7e0-4e5323b484b3.png)
+![2022-03-17-00:27:27-screenshot](https://user-images.githubusercontent.com/96023410/158641935-473f5105-d76f-4476-9638-b21f96e881db.png)
+![2022-03-17-00:38:15-screenshot](https://user-images.githubusercontent.com/96023410/158641946-f33a185e-3db9-4de6-bfd2-cb1a3cf6df57.png)
+
 # Repository
 
 Clone my repository, and go to this folder **[.config](https://github.com/igmt-official/dotfiles/tree/main/.config)**,
