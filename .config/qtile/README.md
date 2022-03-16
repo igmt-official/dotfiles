@@ -206,3 +206,35 @@ Install **[Spotify](https://wiki.archlinux.org/title/spotify)**:
 ```bash
 yay -S spotify # Make sure you already setup your "AUR Helper" you can find my tutorial in home page of this dotfiles repository.
 ```
+
+Now let's customize our **Spotify**, first install **[Spicetify](https://github.com/spicetify/spicetify-cli/wiki/Installation#shell-pre-built-binary---recommended)**:
+
+```bash
+yay -S spicetify-cli
+```
+
+**Note for Linux users**
+**Spotify installed from AUR**
+
+Before applying Spicetify, you need to gain write permission on Spotify files, by running command:
+
+```bash
+sudo chmod a+wr /opt/spotify
+sudo chmod a+wr /opt/spotify/Apps -R
+```
+
+**Note:** Your Spotify client location might be different.
+
+After that we are going to clone **[Spicetify Themes](https://github.com/spicetify/spicetify-themes)**:
+
+```bash
+git clone https://github.com/spicetify/spicetify-themes.git
+```
+
+Copy the files into the **Spicetify Themes** folder. Run:
+
+```bash
+cd spicetify-themes
+cp -r * ~/.config/spicetify/Themes
+```
+
