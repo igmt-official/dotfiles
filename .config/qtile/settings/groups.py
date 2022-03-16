@@ -19,12 +19,10 @@ from .keys import mod, keys
 # Groups
 groups = [
     Group(name = '1', label = "", layout = "monadtall"),
-    Group(name = '2', label = "", matches = [Match(wm_class = 'qutebrowser')], layout = "max"),
+    Group(name = '2', label = "", matches = [Match(wm_class = 'qutebrowser')], layout = "monadtall"),
     Group(name = '3', label = "", matches = [Match(wm_class = 'Alacritty')], layout = "monadtall"),
-    Group(name = '4', label = "", layout = 'max'),
-    Group(name = '5', label = "阮", layout = 'max'),
-    Group(name = '6', label = "", layout = 'max'),
-    Group(name = '7', label = "", layout = 'max')
+    Group(name = '4', label = "阮", layout = 'max'),
+    Group(name = '5', label = "", layout = 'max'),
 ]
 
 for i in groups:
