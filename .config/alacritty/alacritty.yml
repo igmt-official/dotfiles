@@ -78,3 +78,8 @@ font:
   # characters (Unicode points 2500 - 259f).
   #
   #builtin_box_drawing: true
+
+window:
+  padding:
+   x: 10
+   y: 10
