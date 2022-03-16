@@ -104,7 +104,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 If you want my theme which is dracula theme with semi modified by me, copy my **.p10k.zsh**:
 
 ```bash
-cp -r dotfiles/.config/qtile ~
+cp -r dotfiles/.p10k.zsh ~
 ```
 
 Next is we can install plugin in **zsh** like **autosuggestion**, **syntax highlighting** and **completions**,
