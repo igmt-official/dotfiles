@@ -272,7 +272,7 @@ pacman -S base-devel xorg xorg-xinit git nodejs npm networkmanager alacritty fir
 # git, nodejs, npm (For me this is also essential because sometimes we install modules or packages is needed git, nodejs, or npm).
 ```
 
-Before we reboot, enable first ```networkmanager```.
+Before we reboot, enable first **NetworkManager**.
 
 ```bash
 systemctl enable NetworkManager
@@ -289,13 +289,13 @@ reboot
 And now we boot normally, try to login your "User and Pass".
 
 # Qtile installation
-Now installed our ```Window Manager``` which is ```Qtile```.
+Now installed our **Window Manager** which is **Qtile**.
 
 ```bash
 sudo pacman -S qtile
 ```
 
-And setup our ```Qtile``` in ```.xinitrc``` so we can enter in window manager.
+And setup our **Qtile** in **.xinitrc** so we can enter in window manager.
 
 ```bash
 # Edit your .xinitrc using your text editor like "nano or vim"
@@ -305,7 +305,7 @@ nano .xinitrc
 exec qtile start
 ```
 
-To enter in our ```Qtile``` window manager, enter this line:
+To enter in our **Qtile** window manager, enter this line:
 ```bash
 startx
 ```
@@ -377,7 +377,7 @@ In this section we will cover some software that almost everybody needs on their
 ## Wallpaper
 
 First things first, your screen looks empty and black, so you might want to have
-a wallpaper not to feel so depressed. You can open ```firefox``` through ```rofi```
+a wallpaper not to feel so depressed. You can open **Firefox** through **Rofi**
 using **mod + m** and download one. Then install
 **[feh](https://wiki.archlinux.org/index.php/Feh)** or
 **[nitrogen](https://wiki.archlinux.org/index.php/Nitrogen)**
@@ -395,7 +395,7 @@ Go to **[NerdFont](https://www.nerdfonts.com/font-downloads)** and hit downloads
 Once you find a font you like, hit Download on the font to save it as a .zip.
 
 Setup the File Path:
-Make a folder for fonts in defaulit path: ```~/.local/share/(fonts)```
+Make a folder for fonts in defaulit path: **~/.local/share/(fonts)**
 and go to that folder fonts location.x
 ```bash
 mkdir ~/.local/share/fonts && cd ~/.local/share/fonts
@@ -693,7 +693,7 @@ any piece of software on this planet that was meant to run on Linux.
 
 # GTK Theming
 
-Install ```Gtk2``` and ```Gtk3```:
+Install **Gtk2** and **Gtk3**:
 
 ```bash
 sudo pacman -S gtk2 gtk3
@@ -746,7 +746,7 @@ traditional way of editing files though, but you can use
 which is a desktop environment independent GUI for this task, and it lets you
 preview themes.
 
-Installing ```Lxappearance```:
+Installing **Lxappearance**:
 
 ```bash
 sudo pacman -S lxappearance
