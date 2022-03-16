@@ -1,5 +1,9 @@
 # Qtile (Arch Based)
 
+![2022-03-17-00:27:27-screenshot](https://user-images.githubusercontent.com/96023410/158642899-caa1bbcc-f9d0-4b32-8d3b-e840262a9cee.png)
+![2022-03-17-00:26:28-screenshot](https://user-images.githubusercontent.com/96023410/158642865-ceda5b8d-6922-4afb-9adc-86e6c4a3efe9.png)
+![2022-03-17-00:38:15-screenshot](https://user-images.githubusercontent.com/96023410/158642932-334e11a6-6bb8-464b-8252-c0f59d724ac5.png)
+
 # Table of Contents
 - [About](#about)
 - [Installing My Qtile](#installing-my-qtile)
