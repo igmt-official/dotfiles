@@ -1,5 +1,13 @@
 # Qtile (Arch Based)
 
+# Table of Contents
+- [About](#about)
+- [Installing My Qtile](#installing-my-qtile)
+- [My Qtile Features](#my-qtile-features)
+    - [Terminal](##terminal)
+    - [Text Editor](##text-editor)
+    - 
+
 # About
 
 Why i use **Qtile**?
