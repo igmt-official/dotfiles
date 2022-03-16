@@ -8,7 +8,7 @@
     - [Text Editor](#text-editor)
     - [Font](#font)
     - [ZSH](#zsh)
-    - [Application Launcher](#application-launcher)]
+    - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
     - [Browser](#browser)
     - [Theme](#theme)
