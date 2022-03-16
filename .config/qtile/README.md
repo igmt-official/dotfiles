@@ -127,6 +127,12 @@ git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
 source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
 ```
 
+If you want to use my **syntax-highlighting** theme which is dracula theme just copy my **.zshrc**, and make sure you already installed all plugins above.
+
+```bash
+cp -r dotfiles/.zshrc ~
+```
+
 ## Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
