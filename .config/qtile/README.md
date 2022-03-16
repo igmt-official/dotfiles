@@ -70,6 +70,22 @@ sudo pacman -S neovim
 
 Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
+### ZSH
+
+Install **Zsh**:
+
+```bash
+sudo pacman -S zsh
+```
+
+Setup our zsh and make it default shell:
+
+```bash
+zsh
+0 # To create .zshrc file for customizing
+
+```
+
 ### Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
