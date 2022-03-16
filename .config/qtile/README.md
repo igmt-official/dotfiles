@@ -49,7 +49,7 @@ If you only want specific features from my qtile customized, you can check it be
 
 ## Terminal
 
-Install **Alacritty**.
+Install **[Alacritty](https://github.com/alacritty/alacritty)**.
 
 If you want to use dracula theme like on my alacritty,
 just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/alacritty)**.
@@ -60,7 +60,7 @@ sudo pacman -S alacritty
 
 ## Text Editor
 
-Install **Neovim**:
+Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
 
 ```bash
 sudo pacman -S neovim
@@ -72,7 +72,7 @@ Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/rel
 
 ## ZSH
 
-Install **Zsh**:
+Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
 ```bash
 sudo pacman -S zsh
@@ -173,7 +173,7 @@ cp -r dotfiles/.config/gtk-3.0 ~/.config
 
 ## Notification
 
-Install **Dunst**.
+Install **[Dunst](https://wiki.archlinux.org/title/Dunst)**.
 
 And if you want to use my config, just copy my config **[Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)**
 
@@ -185,7 +185,7 @@ Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/ma
 
 ## Screenshot
 
-Install **Scrot**:
+Install **[Scrot](https://wiki.archlinux.org/title/Screen_capture#scrot)**:
 
 ```bash
 sudo pacman -S scrot
@@ -197,4 +197,12 @@ And if you want to use my script for my key binding, copy my script **[Scrot](ht
     ([mod], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot'))), # To screenshot whole window.
     ([mod, "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot select'))), # To select area what you want to screenshot.
     ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
+```
+
+## Spotify
+
+Install **[Spotify](https://wiki.archlinux.org/title/spotify)**:
+
+```bash
+yay -S spotify # Make sure you already setup your "AUR Helper" you can find my tutorial in home page of this dotfiles repository.
 ```
