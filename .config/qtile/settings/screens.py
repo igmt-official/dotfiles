@@ -305,7 +305,9 @@ screens = [
                             foreground = colors['red'],
                             default_text = "",
                             fontsize = 20,
-                            padding = 5
+                            padding = 5,
+                            countdown_start = 5,
+                            countdown_format = "",
                      ),
                      widget.Sep(
                             linewidth = 0,
