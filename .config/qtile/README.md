@@ -1,5 +1,14 @@
 # Qtile (Arch Based)
 
+## About
+
+Why i use **Qtile**?
+so i am new in arch linux and installing of display manager or window manager,
+i tried to install different window manager and it took me weeks to expirement each different window manager,
+and i'm and stuck and struggle because i don't know how i will customize it from scratch because i don't understand what language they are,
+so while i'm exploring different window manager, i fount **Qtile** is written **Python** language, now here's the thing why i decide to use **Qtile**,
+it because i am a **Python Developer** so it easy to me to understand what code inside their config, and i can customize it from scratch.
+
 ## Installing My Qtile
 
 If you want to use my own config, then follow all my steps.
