@@ -49,6 +49,14 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 sudo pacman -S alacritty
 ```
 
+### Text Editor
+
+Install **Neovim**:
+
+```bash
+sudo pacman -S neovim
+```
+
 ### Fonts
 
 Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
@@ -117,12 +125,4 @@ And if you want to use my script for my key binding, copy my script **[Scrot](ht
     ([mod], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot'))), # To screenshot whole window.
     ([mod, "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot select'))), # To select area what you want to screenshot.
     ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
-```
-
-### Text Editor
-
-Install **Neovim**:
-
-```bash
-sudo pacman -S neovim
 ```
