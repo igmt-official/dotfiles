@@ -37,7 +37,7 @@ decor = {
 
 screens = [
        Screen(
-              wallpaper = 'Downloads/wallpaper-master/arch.png',
+              wallpaper = 'Downloads/Wallpaper/arch.png',
               wallpaper_mode = 'fill',
               top = bar.Bar(
               [
