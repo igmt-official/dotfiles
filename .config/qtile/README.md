@@ -4,8 +4,8 @@
 - [About](#about)
 - [Installing My Qtile](#installing-my-qtile)
 - [My Qtile Features](#my-qtile-features)
-    - [Terminal](##terminal)
-    - [Text Editor](##text-editor)
+    - [Terminal](#terminal)
+    - [Text Editor](#text-editor)
     - 
 
 # About
