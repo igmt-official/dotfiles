@@ -6,7 +6,15 @@
 - [My Qtile Features](#my-qtile-features)
     - [Terminal](#terminal)
     - [Text Editor](#text-editor)
-    - 
+    - [Font](#font)
+    - [ZSH](#zsh)
+    - [Application Launcher](#application-launcher)]
+    - [File Manager](#file-manager)
+    - [Browser](#browser)
+    - [Theme](#theme)
+    - [Notification](#notification)
+    - [Screenshot](#screenshot)
+    - [Spotify](#spotify)
 
 # About
 
