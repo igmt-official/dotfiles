@@ -107,6 +107,26 @@ If you want my theme which is dracula theme with semi modified by me, copy my **
 cp -r dotfiles/.config/qtile ~
 ```
 
+Next is we can install plugin in **zsh** like **autosuggestion**, **syntax highlighting** and **completions**,
+just follow my steps.
+
+```bash
+# First Install Autosuggestion.
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+# Then edit your ".zshrc", find this line "plugins=(git)" then paste this line below that code.
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Second Install Syntax Highlighting.
+git clone https://github.com/zsh-users/zsh-syntax-highlighting ~/.zsh/zsh-syntax-highlighting
+# Then paste it again this line in below of "plugins=(git)".
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# For the final Install Completion.
+git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
+# Then paste it again this line in below of "plugins=(git)".
+source ~/.zsh/zsh-completions/zsh-completions.zsh
+```
+
 ## Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
