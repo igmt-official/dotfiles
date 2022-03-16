@@ -10,21 +10,21 @@ If you not downloaded yet my repository:
 git clone https://github.com/igmt-official/dotfiles.git
 ```
 
-Copy my configs:
+First Install Our Dependencies:
 
-```bash
-cp -r dotfiles/.config/qtile ~/.config
-```
-
-Install Dependencies:
-
-First download the font that i'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**.
+Download the font that i'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**.
 
 Now install ```Python Pip``` and ```Psutil```:
 
 ```bash
 sudo pacman -S python-pip # This is for pip installer.
 pip install psutil # Required for some widget on the bar.
+```
+
+Copy my configs:
+
+```bash
+cp -r dotfiles/.config/qtile ~/.config
 ```
 
 Test it with **[Xephyr](https://wiki.archlinux.org/index.php/Xephyr)**:
@@ -48,6 +48,10 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 ```bash
 sudo pacman -S alacritty
 ```
+
+### Fonts
+
+Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
 ### Application Launcher
 
@@ -101,7 +105,8 @@ Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/ma
 
 ### Screenshot
 
-Install **Scrot**.
+Install **Scrot**:
+
 ```bash
 sudo pacman -S scrot
 ```
@@ -114,6 +119,10 @@ And if you want to use my script for my key binding, copy my script **[Scrot](ht
     ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
 ```
 
-### Fonts
+### Text Editor
 
-Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
+Install **Neovim**:
+
+```bash
+sudo pacman -S neovim
+```
