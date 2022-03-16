@@ -82,8 +82,12 @@ Setup our zsh and make it default shell:
 
 ```bash
 zsh
-0 # To create .zshrc file for customizing
+0 # To create .zshrc file for customizing.
 
+chsh -l # To list all installed shells.
+chsh -s /usr/bin/zsh # And to set one as default for your user do.
+
+# And now reboot your pc.
 ```
 
 ### Application Launcher
