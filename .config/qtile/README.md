@@ -1,6 +1,6 @@
 # Qtile (Arch Based)
 
-## About
+# About
 
 Why i use **Qtile**?
 so i am new in arch linux and installing of display manager or window manager,
@@ -9,7 +9,7 @@ and i'm and stuck and struggle because i don't know how i will customize it from
 so while i'm exploring different window manager, i fount **Qtile** is written **Python** language, now here's the thing why i decide to use **Qtile**,
 it because i am a **Python Developer** so it easy to me to understand what code inside their config, and i can customize it from scratch.
 
-## Installing My Qtile
+# Installing My Qtile
 
 If you want to use my own config, then follow all my steps.
 
@@ -43,11 +43,11 @@ Xephyr -br -ac -noreset -screen 1280x720 :1 &
 DISPLAY=:1 qtile
 ```
 
-## My Qtile Features
+# My Qtile Features
 
 If you only want specific features from my qtile customized, you can check it below.
 
-### Terminal
+## Terminal
 
 Install **Alacritty**.
 
@@ -58,7 +58,7 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 sudo pacman -S alacritty
 ```
 
-### Text Editor
+## Text Editor
 
 Install **Neovim**:
 
@@ -66,11 +66,11 @@ Install **Neovim**:
 sudo pacman -S neovim
 ```
 
-### Fonts
+## Fonts
 
 Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
-### ZSH
+## ZSH
 
 Install **Zsh**:
 
@@ -90,7 +90,7 @@ chsh -s /usr/bin/zsh # And to set one as default for your user do.
 # And now reboot your pc.
 ```
 
-### Application Launcher
+## Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
 
@@ -101,7 +101,7 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 sudo pacman -S rofi
 ```
 
-### File Manager
+## File Manager
 
 Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
@@ -109,7 +109,7 @@ Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 sudo pacman -S thunar
 ```
 
-### Browser
+## Browser
 
 Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**.
 
@@ -119,7 +119,7 @@ Copy my **[Conifg](https://github.com/igmt-official/dotfiles/tree/main/.config/q
 sudo pacman -S qutebrowser
 ```
 
-### Theme
+## Theme
 
 Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my config:
 
@@ -128,7 +128,7 @@ cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
 cp -r dotfiles/.config/gtk-3.0 ~/.config
 ```
 
-### Notification
+## Notification
 
 Install **Dunst**.
 
@@ -140,7 +140,7 @@ sudo pacman -S dunst
 
 Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/main/.local/bin)**, for wifi, screenshot, and volume notificiation.
 
-### Screenshot
+## Screenshot
 
 Install **Scrot**:
 
