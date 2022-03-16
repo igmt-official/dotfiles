@@ -124,7 +124,7 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # For the final Install Completion.
 git clone https://github.com/zsh-users/zsh-completions ~/.zsh/zsh-completions
 # Then paste it again this line in below of "plugins=(git)".
-source ~/.zsh/zsh-completions/zsh-completions.zsh
+source ~/.zsh/zsh-completions/zsh-completions.plugin.zsh
 ```
 
 ## Application Launcher
