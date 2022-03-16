@@ -90,6 +90,16 @@ chsh -s /usr/bin/zsh # And to set one as default for your user do.
 # And now reboot your pc.
 ```
 
+Now if you want to customize your **zsh**, follow this steps:
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # This is for installing "Oh My Zsh".
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k # Next install our "powerlevel10k theme".
+
+# Now restart your terminal, and follow all step in p10k for configuring your style. 
+```
+
 ## Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
