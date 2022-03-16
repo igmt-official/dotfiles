@@ -90,7 +90,7 @@ chsh -s /usr/bin/zsh # And to set one as default for your user do.
 # And now reboot your pc.
 ```
 
-Now if you want to customize your **zsh**, follow this steps:
+Now if you want to customize your **zsh**, we need to install **Oh My Zsh** and **Powerlevel10k Theme**:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # This is for installing "Oh My Zsh".
