@@ -101,10 +101,16 @@ screens = [
                             ),
                      widget.TextBox(
                             font = "JetBrainsMono Bold",
-                            text = '',
+                            text = '',
                             background = colors['cyan'],
                             foreground = colors['background'],
-                            fontsize = 20
+                            fontsize = 15
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
                             ),
                      widget.CheckUpdates(
                             font = "JetBrainsMono Bold",
@@ -125,12 +131,24 @@ screens = [
                             padding = 0,
                             fontsize = 25
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
+                            ),
                      widget.TextBox(
                             font = "JetBrainsMono Bold",
-                            text = '',
+                            text = '',
                             background = colors['purple'],
                             foreground = colors['background'],
-                            fontsize = 25
+                            fontsize = 15
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
                             ),
                      widget.ThermalSensor(
                             font = "JetBrainsMono Bold",
@@ -140,12 +158,24 @@ screens = [
                             fmt = '{}',
                             padding = 5
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
+                            ),
                      widget.TextBox(
                             text = '\uE0B2',
                             background = colors['purple'],
                             foreground = colors['cyan'],
                             padding = 0,
                             fontsize = 25
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
                             ),
                      widget.TextBox(
                             font = "JetBrainsMono Bold",
@@ -162,12 +192,24 @@ screens = [
                             padding = 5,
                             background = colors['cyan']
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
+                            ),
                      widget.TextBox(
                             text = '\uE0B2',
                             background = colors['cyan'],
                             foreground = colors['purple'],
                             padding = 0,
                             fontsize = 25
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
                             ),
                      widget.TextBox(
                             font = "JetBrainsMono Bold",
@@ -176,12 +218,24 @@ screens = [
                             foreground = colors['background'],
                             fontsize = 15
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
+                            ),
                      widget.CPU(
                             font = "JetBrainsMono Bold",
                             foreground = colors['background'],
                             background = colors['purple'],
                             format = '{freq_current}GHz {load_percent}%',
                             padding = 5
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['purple'],
+                            background = colors['purple']
                             ),
                      widget.TextBox(
                             text = '\uE0B2',
@@ -190,12 +244,24 @@ screens = [
                             padding = 0,
                             fontsize = 25
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
+                            ),
                      widget.TextBox(
                             font = "JetBrainsMono Bold",
                             text = '',
                             background = colors['cyan'],
                             foreground = colors['background'],
                             fontsize = 20
+                            ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
                             ),
                      widget.Clock(
                             font = "JetBrainsMono Bold",
@@ -204,22 +270,48 @@ screens = [
                             format = "%B %d %a %I:%M %p",
                             padding = 5
                             ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['cyan'],
+                            background = colors['cyan']
+                            ),
                      widget.TextBox(
                             text = '\uE0B2',
                             background = colors['cyan'],
-                            foreground = colors['current_line'],
+                            foreground = colors['purple'],
                             padding = 0,
                             fontsize = 25
                             ),
                      widget.Systray(
-                            background = colors['current_line'],
+                            background = colors['purple'],
                             padding = 5
                             ),
                      widget.Sep(
                             linewidth = 0,
                             padding = 5,
-                            foreground = colors['current_line'],
-                            background = colors['current_line']
+                            foreground = colors['purple'],
+                            background = colors['purple']
+                            ),
+                     widget.TextBox(
+                            text = '\uE0B2',
+                            background = colors['purple'],
+                            foreground = colors['background'],
+                            padding = 0,
+                            fontsize = 25
+                            ),
+                     widget.QuickExit(
+                            background = colors['background'],
+                            foreground = colors['red'],
+                            default_text = "",
+                            fontsize = 20,
+                            padding = 5
+                     ),
+                     widget.Sep(
+                            linewidth = 0,
+                            padding = 5,
+                            foreground = colors['background'],
+                            background = colors['background']
                             ),
               ],
               24,
