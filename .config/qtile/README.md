@@ -97,7 +97,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k # Next install our "powerlevel10k theme".
 
+# Set "ZSH_THEME="powerlevel10k/powerlevel10k" in "~/.zshrc".
+
 # Now restart your terminal, and follow all step in p10k for configuring your style. 
+```
+If you want my theme which is dracula theme with semi modified by me, copy my **.p10k.zsh**:
+
+```bash
+cp -r dotfiles/.config/qtile ~
 ```
 
 ## Application Launcher
