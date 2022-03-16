@@ -696,8 +696,7 @@ any piece of software on this planet that was meant to run on Linux.
 Install ```Gtk2``` and ```Gtk3```:
 
 ```bash
-sudo pacman -S gtk2
-sudo pacman -S gtk3
+sudo pacman -S gtk2 gtk3
 ```
 
 You can find GTK themes [on this page](https://www.gnome-look.org/browse/cat/135/).
