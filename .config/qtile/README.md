@@ -9,9 +9,10 @@
 - [Installing My Qtile](#installing-my-qtile)
 - [My Qtile Features](#my-qtile-features)
     - [Terminal](#terminal)
+        - [ZSH](#zsh)
+        - [Neofetch](#neofetch)
     - [Text Editor](#text-editor)
     - [Font](#font)
-    - [ZSH](#zsh)
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
     - [Browser](#browser)
@@ -78,19 +79,7 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 sudo pacman -S alacritty
 ```
 
-## Text Editor
-
-Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
-
-```bash
-sudo pacman -S neovim
-```
-
-## Fonts
-
-Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
-
-## ZSH
+### ZSH
 
 Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
@@ -152,6 +141,27 @@ If you want to use my **syntax-highlighting** theme which is dracula theme just 
 ```bash
 cp -r dotfiles/.zshrc ~
 ```
+
+### Neofetch
+
+Install **[Neofetch](https://github.com/dylanaraps/neofetch)**:
+
+```bash
+sudo pacman -S neofetch
+neofetch
+```
+
+## Text Editor
+
+Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
+
+```bash
+sudo pacman -S neovim
+```
+
+## Fonts
+
+Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
 ## Application Launcher
 
