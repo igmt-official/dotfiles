@@ -213,9 +213,9 @@ After that edit **.config/nvim/init.lua** and uncommenting all **#** sign, then 
 
 ### KeyMap
 
-| Key                                          | Action                   |
-| -------------------------------------------- | ------------------------ |
-| **Space + t       | Plugins Installer        | File Explorer            |
+| Key                           | Action                   |
+| ------------------------------| ------------------------ |
+| **Space + t**                 | File Explorer            |
 
 ### Lsp
 
