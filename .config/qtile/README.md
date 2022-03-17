@@ -52,6 +52,8 @@ Now install **Python Pip** and **Psutil**:
 ```bash
 sudo pacman -S python-pip # This is for pip installer.
 pip install psutil # Required for some widget on the bar.
+
+sudo pacman -S network-manager-applet volumeicon # This is for my System Tray.
 ```
 
 Copy my configs:
