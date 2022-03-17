@@ -204,13 +204,13 @@ Next edit ```.config/nvim/lua/packer-config/init.lua``` in **Neovim** install pa
 :PackerSync
 ```
 
-Now try to uncommenting all plugins that have ```#``` sign and try to install all plugins using this command:
+Now try to uncommenting all plugins that have ```--``` sign and try to install all plugins using this command:
 
 ```vim
 :PackerSync
 ```
 
-After that edit ```.config/nvim/init.lua``` and uncommenting all ```#``` sign, then save it and reload the **Lua Config** using this command:
+After that edit ```.config/nvim/init.lua``` and uncommenting all ```--``` sign, then save it and reload the **Lua Config** using this command:
 
 ```vim
 :luafile %
@@ -235,7 +235,7 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 :TSInstall lua
 ```
 
-Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```#```.
+Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.
 
 ### KeyMap
 
