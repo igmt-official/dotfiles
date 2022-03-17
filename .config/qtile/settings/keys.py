@@ -47,6 +47,9 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
 
     # ------------ App Configs ------------
 
+    # Gimp
+    ([mod], "g", lazy.spawn("gimp-2.10")),
+
     # Spotify
     ([mod], "q", lazy.spawn("spotify")),
     
