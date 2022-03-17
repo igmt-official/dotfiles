@@ -16,6 +16,7 @@
         - [Plugins](#plugins)
         - [KeyMap](#keymap)
         - [Lsp](#lsp)
+        - [Treesitter](#treesitter)
     - [Font](#font)
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
@@ -227,6 +228,10 @@ For my **Lsp Config**, I install **[Python Language Server](https://github.com/m
 
 Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
 
+```bash
+sudo npm i -g pyright
+```
+
 ### Treesitter
 
 For my **Treesitter Config**, I install **Python** and **Lua** to enable their syntax, to install just type this command inside **Neovim**:
@@ -236,9 +241,7 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 :TSInstall lua
 ```
 
-```bash
-sudo npm i -g pyright
-```
+Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```#```.
 
 # Fonts
 
