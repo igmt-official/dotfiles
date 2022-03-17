@@ -151,6 +151,8 @@ sudo pacman -S neofetch
 neofetch
 ```
 
+If you want to use my neofetch customized, just copy my **[Config](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)**.
+
 ## Text Editor
 
 Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
