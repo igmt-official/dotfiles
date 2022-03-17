@@ -192,7 +192,8 @@ git clone --depth 1 https://github.com/wbthomason/packer.nvim\
  ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
 
-Now copy all my **Neovim Config**.
+Now copy all my **[Neovim Config](https://github.com/igmt-official/dotfiles/tree/main/.config/nvim)**.
+
 Next edit **.config/nvim/lua/packer-config/init.lua** in **Neovim** install packer plugin using this command:
 
 ```vim
