@@ -172,11 +172,22 @@ If you want to make your own setup, search in **[Youtube](https://youtube.com)**
 
 ## Neovim Features
 
+This plugin is for **Plugins Installer**.
 **[Plugins Packer](https://github.com/wbthomason/packer.nvim)**
+
+This plugin is for **File Explorer**.
 **[Nvim Tree](https://github.com/kyazdani42/nvim-tree.lua)**
+
+This plugin for theming our **Neovim**.
 **[Colorscheme](https://github.com/Mofiqul/dracula.nvim)**
+
+This plugin allows for declaratively configuring, launching, and initializing language servers you have installed on your system.
 **[Lsp Config](https://github.com/neovim/nvim-lspconfig)**
+
+This plugin is allow to auto complete our code.
 **[Nvim Cmp](https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion)**
+
+This plugin adds vscode-like pictograms to neovim built-in lsp.
 **[Lsp Kind](https://github.com/onsails/lspkind-nvim)**
 
 ### Plugins
