@@ -773,4 +773,5 @@ like **Scrot**, **Dunst** or **Volume**.
 
 # Credits
 My Dotfiles Inspired By **[Antoniosarosi](https://github.com/antoniosarosi/dotfiles)**.
+
 My Qtile Setup Inspired By **[Barbaross93](https://github.com/Barbaross93/Genome)**.
