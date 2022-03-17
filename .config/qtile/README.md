@@ -201,6 +201,7 @@ After that edit **.config/nvim/init.lua** and uncommenting all **#** sign, then 
 ### Lsp
 
 For my **Lsp Config**, I install **[Python Language Server](https://github.com/microsoft/pyright)**, because I'm **Python Developer**.
+
 Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
 
 ```bash
