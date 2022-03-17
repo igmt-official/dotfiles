@@ -197,6 +197,15 @@ After that edit **.config/nvim/init.lua** and uncommenting all **#** sign, then 
 
 ### KeyMap
 
+### Lsp
+
+For my **Lsp Config**, I install **[Python Language Server](https://github.com/microsoft/pyright)**, because I'm **Python Developer**.
+Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
+
+```bash
+sudo npm i -g pyright
+```
+
 # Fonts
 
 Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
