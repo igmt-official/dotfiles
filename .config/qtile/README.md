@@ -183,6 +183,7 @@ If you want to make your own setup, search in **[Youtube](https://youtube.com)**
 | **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**                          | Fancy Notification       |
 | **[Lualine](https://github.com/nvim-lualine/lualine.nvim)**                         | Statusline               |
 | **[Barbar](https://github.com/romgrk/barbar.nvim)**                                 | Tabline                  |
+| **[Treesitter](https://tree-sitter.github.io/tree-sitter/)**                        | Treesitter               |
 
 ### Plugins
 
@@ -225,6 +226,15 @@ After that edit **.config/nvim/init.lua** and uncommenting all ```#``` sign, the
 For my **Lsp Config**, I install **[Python Language Server](https://github.com/microsoft/pyright)**, because I'm **Python Developer**.
 
 Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
+
+### Treesitter
+
+For my **Treesitter Config**, I install **Python** and **Lua** to enable their syntax, to install just type this command inside **Neovim**:
+
+```vim
+:TSInstall python
+:TSInstall lua
+```
 
 ```bash
 sudo npm i -g pyright
