@@ -14,6 +14,7 @@
     - [Text Editor](#text-editor)
         - [Plugins](#plugins)
         - [KeyMap](#keymap)
+        - [Lsp](#lsp)
     - [Font](#font)
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
