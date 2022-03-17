@@ -18,10 +18,10 @@
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
     - [Browser](#browser)
-    - [Theme](#theme)
     - [Notification](#notification)
     - [Screenshot](#screenshot)
     - [Spotify](#spotify)
+    - [Theme](#theme)
 
 # About
 
@@ -70,7 +70,7 @@ DISPLAY=:1 qtile
 
 If you only want specific features from my qtile customized, you can check it below.
 
-## Terminal
+# Terminal
 
 Install **[Alacritty](https://github.com/alacritty/alacritty)**.
 
@@ -155,7 +155,7 @@ neofetch
 
 If you want to use my neofetch customized, just copy my **[Config](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)**.
 
-## Text Editor
+# Text Editor
 
 Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
 
@@ -197,11 +197,11 @@ After that edit **.config/nvim/init.lua** and uncommenting all **#** sign, then 
 
 ### KeyMap
 
-## Fonts
+# Fonts
 
 Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
 
-## Application Launcher
+# Application Launcher
 
 Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
 
@@ -212,7 +212,7 @@ just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/ma
 sudo pacman -S rofi
 ```
 
-## File Manager
+# File Manager
 
 Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
@@ -220,7 +220,7 @@ Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 sudo pacman -S thunar
 ```
 
-## Browser
+# Browser
 
 Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**.
 
@@ -230,16 +230,7 @@ Copy my **[Conifg](https://github.com/igmt-official/dotfiles/tree/main/.config/q
 sudo pacman -S qutebrowser
 ```
 
-## Theme
-
-Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my config:
-
-```bash
-cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
-cp -r dotfiles/.config/gtk-3.0 ~/.config
-```
-
-## Notification
+# Notification
 
 Install **[Dunst](https://wiki.archlinux.org/title/Dunst)**.
 
@@ -251,7 +242,7 @@ sudo pacman -S dunst
 
 Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/main/.local/bin)**, for wifi, screenshot, and volume notificiation.
 
-## Screenshot
+# Screenshot
 
 Install **[Scrot](https://wiki.archlinux.org/title/Screen_capture#scrot)**:
 
@@ -267,7 +258,7 @@ And if you want to use my script for my key binding, copy my script **[Scrot](ht
     ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
 ```
 
-## Spotify
+# Spotify
 
 Install **[Spotify](https://wiki.archlinux.org/title/spotify)**:
 
@@ -320,3 +311,11 @@ spicetify apply
 
 You can pick what you one **[Spicetify Themes](https://github.com/spicetify/spicetify-themes)**.
 
+# Theme
+
+Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my config:
+
+```bash
+cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
+cp -r dotfiles/.config/gtk-3.0 ~/.config
+```
