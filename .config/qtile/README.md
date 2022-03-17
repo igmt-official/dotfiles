@@ -14,9 +14,9 @@
     - [Text Editor](#text-editor)
     - [Neovim Features](#neovim-features)
         - [Plugins](#plugins)
-        - [KeyMap](#keymap)
         - [Lsp](#lsp)
         - [Treesitter](#treesitter)
+        - [KeyMap](#keymap)
     - [Font](#font)
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
@@ -210,17 +210,11 @@ Now try to uncommenting all plugins that have ```#``` sign and try to install al
 :PackerSync
 ```
 
-After that edit **.config/nvim/init.lua** and uncommenting all ```#``` sign, then save it and reload the **Lua Config** using this command:
+After that edit ```.config/nvim/init.lua``` and uncommenting all ```#``` sign, then save it and reload the **Lua Config** using this command:
 
 ```vim
 :luafile %
 ```
-
-### KeyMap
-
-| Key                           | Action                   |
-| ------------------------------| ------------------------ |
-| **Space + t**                 | File Explorer            |
 
 ### Lsp
 
@@ -242,6 +236,12 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 ```
 
 Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```#```.
+
+### KeyMap
+
+| Key                           | Action                   |
+| ------------------------------| ------------------------ |
+| **Space + t**                 | File Explorer            |
 
 # Fonts
 
