@@ -180,6 +180,7 @@ If you want to make your own setup, search in **[Youtube](https://youtube.com)**
 | **[Lsp Config](https://github.com/neovim/nvim-lspconfig)**            | Initializing Language    |
 | **[Cmp](https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion)**             | Auto Complete Code       |
 | **[Lsp Kind](https://github.com/onsails/lspkind-nvim)**               | Vscode-like Pictograms   |
+| **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**            | Fancy Notification       |
 
 
 ### Plugins
