@@ -12,6 +12,7 @@
         - [ZSH](#zsh)
         - [Neofetch](#neofetch)
     - [Text Editor](#text-editor)
+    -   - [Packer](#packer)
     - [Font](#font)
     - [Application Launcher](#application-launcher)
     - [File Manager](#file-manager)
@@ -159,6 +160,36 @@ Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
 
 ```bash
 sudo pacman -S neovim
+```
+
+Now we can setup our **Neovim** to be our **IDE**, I will not guide you step by step, because it will take a long series.
+If you want to make your own setup, search in **[Youtube](https://youtube.com)**, this steps is guide to activate my **Neovim Setup**.
+
+Install **Plugin Manager**:
+
+```bash
+# This is for setting up our Plugins Packer
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+Now copy all my **Neovim Config**.
+Next edit **.config/nvim/lua/packer-config/init.lua** in **Neovim** install packer plugin using this command:
+
+```vim
+:PackerSync
+```
+
+Now try to uncommenting all plugins that have **#** sign and try to install all plugins using this command:
+
+```vim
+:PackerSync
+```
+
+After that edit **.config/nvim/init.lua** and uncommenting all **#** sign, then save it and reload the **Lua Config** using this command:
+
+```vim
+:luafile %
 ```
 
 ## Fonts
