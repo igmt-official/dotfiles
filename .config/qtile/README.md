@@ -172,16 +172,17 @@ If you want to make your own setup, search in **[Youtube](https://youtube.com)**
 
 ## Neovim Features
 
-| Neovim Features                                                       | Utility                  |
-| --------------------------------------------------------------------- | ------------------------ |
-| **[Plugins Packer](https://github.com/wbthomason/packer.nvim)**       | Plugins Installer        |
-| **[Nvim Tree](https://github.com/kyazdani42/nvim-tree.lua)**          | File Explorer            |
-| **[Colorscheme](https://github.com/Mofiqul/dracula.nvim)**            | Theme                    |
-| **[Lsp Config](https://github.com/neovim/nvim-lspconfig)**            | Initializing Language    |
+| Neovim Features                                                                     | Utility                  |
+| ----------------------------------------------------------------------------------- | ------------------------ |
+| **[Plugins Packer](https://github.com/wbthomason/packer.nvim)**                     | Plugins Installer        |
+| **[Nvim Tree](https://github.com/kyazdani42/nvim-tree.lua)**                        | File Explorer            |
+| **[Colorscheme](https://github.com/Mofiqul/dracula.nvim)**                          | Theme                    |
+| **[Lsp Config](https://github.com/neovim/nvim-lspconfig)**                          | Initializing Language    |
 | **[Cmp](https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion)**             | Auto Complete Code       |
-| **[Lsp Kind](https://github.com/onsails/lspkind-nvim)**               | Vscode-like Pictograms   |
-| **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**            | Fancy Notification       |
-
+| **[Lsp Kind](https://github.com/onsails/lspkind-nvim)**                             | Vscode-like Pictograms   |
+| **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**                          | Fancy Notification       |
+| **[Lualine](https://github.com/nvim-lualine/lualine.nvim)**                         | Statusline               |
+| **[Barbar](https://github.com/romgrk/barbar.nvim)**                                 | Tabline                  |
 
 ### Plugins
 
