@@ -12,7 +12,7 @@
         - [ZSH](#zsh)
         - [Neofetch](#neofetch)
     - [Text Editor](#text-editor)
-    - [Neovim Features](#my-neovim-features)
+    - [Neovim Features](#neovim-features)
         - [Plugins](#plugins)
         - [KeyMap](#keymap)
         - [Lsp](#lsp)
