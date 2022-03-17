@@ -169,6 +169,15 @@ sudo pacman -S neovim
 Now we can setup our **Neovim** to be our **IDE**, I will not guide you step by step, because it will take a long series.
 If you want to make your own setup, search in **[Youtube](https://youtube.com)**, this steps is guide to activate my **Neovim Setup**.
 
+## My Neovim Features
+
+**[Plugins Packer](https://github.com/wbthomason/packer.nvim)**
+**[Nvim Tree](https://github.com/kyazdani42/nvim-tree.lua)**
+**[Colorscheme](https://github.com/Mofiqul/dracula.nvim)**
+**[Lsp Config](https://github.com/neovim/nvim-lspconfig)**
+**[Nvim Cmp](https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion)**
+**[Lsp Kind](https://github.com/onsails/lspkind-nvim)**
+
 ### Plugins
 
 Install **Plugin Manager**:
