@@ -1,6 +1,6 @@
 return require("packer").startup(function()
     -- Plugin Manager
-	use'wbthomason/packer.nvim'
+    use'wbthomason/packer.nvim'
 
     -- Colorschemes
     use 'Mofiqul/dracula.nvim'
