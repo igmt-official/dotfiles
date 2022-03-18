@@ -105,6 +105,12 @@ sudo npm install -g eslint
 
 ## KeyMap
 
-| Key                           | Action                   |
-| ------------------------------| ------------------------ |
-| **Space + t**                 | File Explorer            |
+| Key                            | Action                           |
+| -------------------------------| -------------------------------- |
+| **leader + t**                 | File Explorer                    |
+| **leader + ff**                | Find Files                       |
+| **leader + fg**                | Live Grep                        |
+| **leader + rn**                | Rename                           |
+| **a**                          | Create file inside File Explorer |
+| **alt + 1 - 9, 0**             | Next tab                         |
+| **leader + lf**                | Auto Format Code                 |
