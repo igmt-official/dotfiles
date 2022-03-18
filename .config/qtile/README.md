@@ -86,6 +86,8 @@ If you only want specific features from my qtile customized, you can check it be
 - [Spotify](#spotify)
 - [Theme](#theme)
 
+# Zsh
+
 Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
 ```bash
