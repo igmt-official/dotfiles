@@ -76,6 +76,15 @@ Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
 sudo npm i -g pyright
 ```
 
+And also install **[Eslint Language Server](https://github.com/hrsh7th/vscode-langservers-extracted)** for **JavaScript and TyperScript:
+
+```bash
+sudo npm i -g vscode-langservers-extracted
+```
+
+You can install what you want language to install your langauge server,
+go to this site **[Language Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md).
+
 ## Treesitter
 
 For my **Treesitter Config**, I install **Python** and **Lua** to enable their syntax, to install just type this command inside **Neovim**:
