@@ -16,6 +16,8 @@ echo ""
 
 if [ $yN0 == "Y" ]; then
 
+    ##### QTILE #####
+
     echo "Installing required dependecies..."
     sudo pacman -S python-pip
     pip install psutil
@@ -36,6 +38,8 @@ if [ $yN0 == "Y" ]; then
     fc-cache -fv
 
     echo ""
+
+    ##### ZSH #####
 
     echo "Installing Zsh..."
     sudo pacman -S zsh
@@ -74,6 +78,8 @@ if [ $yN0 == "Y" ]; then
 
         echo ""
     fi
+
+    ##### NEOVIM #####
 
     echo "Installing Neovim..."
     sudo pacman -S neovim
@@ -116,6 +122,9 @@ if [ $yN0 == "Y" ]; then
     echo ""
 
     if [ $yN2 == "Y" ]; then
+
+        ##### ROFI #####
+
         echo "Installing Rofi..."
         sudo pacman -S rofi
         echo "Copying rofi configuration..."
@@ -123,18 +132,24 @@ if [ $yN0 == "Y" ]; then
 
         echo ""
 
+        ##### THUNAR #####
+
         echo "Installing Thunar..."
         sudo pacman -S thunar
 
         echo ""
 
-        echo "Installing QuteBrowser..."
-        sudo pacman -S qutebrowser
+        ##### QUTEBROWSER #####
+
+        # echo "Installing QuteBrowser..."
+        # sudo pacman -S qutebrowser
         echo "Copying qutebrowser configuration..."
         [ ! -d "$HOME/.config/qutebrowser" ] && mkdir -p $HOME/.config/qutebrowser
         cp -r dotfiles/.config/qutebrowser $HOME/.config
 
         echo ""
+
+        ##### DUNST #####
 
         echo "Installing Dunst..."
         sudo pacman -S dunst
@@ -144,6 +159,8 @@ if [ $yN0 == "Y" ]; then
         cp -r $PWD/.config/dunst $HOME/.config
 
         echo ""
+
+        ##### SCROT #####
 
         echo "Installing Scrot..."
         sudo pacman -S scrot
@@ -161,6 +178,8 @@ if [ $yN0 == "Y" ]; then
         echo "##################################################################################"
 
         echo ""
+
+        ##### SPOTIFY #####
 
         echo "Installing Spotify..."
         yay -S spotify
