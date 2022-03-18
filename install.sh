@@ -8,7 +8,7 @@ echo "#################################################"
 echo ""
 
 echo "Note: Please follow the instruction carefully, to avoid cancelling this installation!"
-echo "And also make sure you have already installed 'node', 'npm' and 'yay (Aur Helper).'"
+echo "And also make sure you have already installed 'pip', 'node', 'npm' and 'yay (Aur Helper).'"
 echo "Make sure you have a good internet, because we are gonna download some dependencies and packages."
 read -p "Do you want to procceed the installation? Type 'Y': " yN0
 
@@ -90,6 +90,9 @@ if [ $yN0 == "Y" ]; then
     cp -r $PWD/.config/nvim $HOME/.config/
     echo "Installing Ripgrep and Fd (this is required for telescope)..."
     sudo pacman -S ripgrep fd
+    echo "Installing Eslint and Autopep8 (this is required for null-ls)..."
+    sudo npm install -g eslint
+    pip install --upgrade autopep8
 
     echo ""
 

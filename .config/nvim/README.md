@@ -34,8 +34,9 @@ cp -r dotfiles/.config/nvim ~/.config
 | **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**                          | Fancy Notification       |
 | **[Lualine](https://github.com/nvim-lualine/lualine.nvim)**                         | Statusline               |
 | **[Barbar](https://github.com/romgrk/barbar.nvim)**                                 | Tabline                  |
-| **[Treesitter](https://tree-sitter.github.io/tree-sitter/)**                        | Treesitter               |
-| **[Telescope](https://github.com/nvim-telescope/telescope.nvim#pickers)**           | Telescope                |
+| **[Treesitter](https://tree-sitter.github.io/tree-sitter/)**                        | Syntax Highlight         |
+| **[Telescope](https://github.com/nvim-telescope/telescope.nvim#pickers)**           | Finder                   |
+| **[Null-ls](https://github.com/jose-elias-alvarez/null-ls.nvim)**                   | Format on Save           |
 
 ## Plugins
 
@@ -84,6 +85,8 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 :TSInstall lua
 ```
 
+Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.
+
 ## Telescope
 
 Installing Ripgrep and Fd:
@@ -92,7 +95,13 @@ Installing Ripgrep and Fd:
 sudo pacman -S ripgrep fd
 ```
 
-Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.
+## Null-ls
+
+Installing Eslint and Autopep8:
+
+```bash
+sudo npm install -g eslint
+```
 
 ## KeyMap
 
