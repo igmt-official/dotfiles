@@ -182,21 +182,7 @@ if [ $yN0 == "Y" ]; then
         spicetify apply
 
         echo ""
-
-        echo "Installing Gtk2 and Gtk3"
-        sudo pacman -S gtk2 gtk3
-        cd $PWD/.theme && sudo mv Sample-Theme /usr/share/themes
-        sudo mv Sample-Theme-Icon /usr/share/icons
-        echo "Copying gtk configuration..."
-        cp -r $PWD/.gtkrc-2.0 $HOME 
-        cp -r $PWD/.config/gtk-3.0 $HOME/.config
-        echo "Installing Lxappearance"
-        sudo pacman -S lxappearance
-
-        echo ""
-
-        echo "Now reboot your pc, and open your lxappearance app,"
-        echo "apply your dracula theme. Enjoy!"
+        
         echo "All done."
     fi
 fi
