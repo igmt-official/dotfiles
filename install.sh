@@ -203,39 +203,40 @@ if [ $yN0 == "Y" ]; then
             cp -r $PWD/.config/BetterDiscord $HOME/.config/
 
             echo ""
+
+            ##### SPOTIFY #####
+
+            echo "Installing Spotify..."
+            yay -S spotify
+            echo "Installing Spicetify..."
+            yay -S spicetify-cli
+            echo "Applying permission to spotify..."
+            sudo chmod a+wr /opt/spotify
+            sudo chmod a+wr /opt/spotify/Apps -R
+            echo "Cloning spicetify themes..."
+            git clone https://github.com/spicetify/spicetify-themes.git
+            echo "Copying spicetify configuration..."
+            cd spicetify-themes
+            cp -r * $HOME/.config/spicetify/Themes
+            echo "Applying dribbblish themes..."
+            cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+            mkdir -p ../../Extensions
+            cp dribbblish.js ../../Extensions/.
+            spicetify config extensions dribbblish.js
+            spicetify config current_theme Dribbblish color_scheme base
+            spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+            spicetify apply
+
+            echo ""
+
+            echo "Now for setting up our theme, just go this this tutorial:"
+            echo "https://github.com/igmt-official/dotfiles#gtk-theming"
+
+            echo ""
+
+            echo "All done."
+
         fi
-
-        ##### SPOTIFY #####
-
-        echo "Installing Spotify..."
-        yay -S spotify
-        echo "Installing Spicetify..."
-        yay -S spicetify-cli
-        echo "Applying permission to spotify..."
-        sudo chmod a+wr /opt/spotify
-        sudo chmod a+wr /opt/spotify/Apps -R
-        echo "Cloning spicetify themes..."
-        git clone https://github.com/spicetify/spicetify-themes.git
-        echo "Copying spicetify configuration..."
-        cd spicetify-themes
-        cp -r * $HOME/.config/spicetify/Themes
-        echo "Applying dribbblish themes..."
-        cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
-        mkdir -p ../../Extensions
-        cp dribbblish.js ../../Extensions/.
-        spicetify config extensions dribbblish.js
-        spicetify config current_theme Dribbblish color_scheme base
-        spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
-        spicetify apply
-
-        echo ""
-
-        echo "Now for setting up our theme, just go this this tutorial:"
-        echo "https://github.com/igmt-official/dotfiles#gtk-theming"
-
-        echo ""
-
-        echo "All done."
 
     fi
 
