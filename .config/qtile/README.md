@@ -33,6 +33,12 @@ Now we have to change permission our script to be a excutable:
 chmod +x install.sh
 ```
 
+Now let's run our installation script:
+
+```bash
+./install.sh
+```
+
 # Installing My Qtile
 
 If you want to use my own config, then follow all my steps.
