@@ -78,7 +78,7 @@ If you only want specific features from my qtile customized, you can check it be
 - [ZSH](#zsh)
 - [Neofetch](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)
 - [Neovim](https://github.com/igmt-official/dotfiles/tree/main/.config/nvim)
-- [Rofi](#application-launcher)
+- [Rofi](https://github.com/igmt-official/dotfiles/tree/main/.config/rofi)
 - [Thunar](#thunar)
 - [QuteBrowser](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)
 - [Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)
