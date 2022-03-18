@@ -92,6 +92,10 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 ```vim
 :TSInstall python
 :TSInstall lua
+:TSInstall javascript
+:TSInstall html
+:TSInstall css
+:TSInstall json
 ```
 
 Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.
