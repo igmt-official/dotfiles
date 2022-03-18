@@ -1,3 +1,5 @@
+#!/bin/bash/
+
 echo "#################################################"
 echo "Welcome to Igmt-Official Dotfiles"
 echo "Written by https://www.reddit.com/u/igmt-official"
@@ -28,7 +30,7 @@ if [ $yN0 == "Y" ]; then
     echo ""
 
     echo "Copying qtile configuration..."
-    # [ ! -d "$HOME/.config/qtile" ] && mkdir -p $HOME/.config/qtile/
+    [ ! -d "$HOME/.config" ] && mkdir -p $HOME/.config
     cp -r $PWD/.config/qtile $HOME/.config/
     echo "Reloading fonts cache..."
     fc-cache -fv
