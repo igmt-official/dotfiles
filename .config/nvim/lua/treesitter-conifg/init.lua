@@ -3,6 +3,10 @@
 -- 	ensure_installed = {
 -- 		"python",
 -- 		"lua",
+--         "javascript",
+--         "css",
+--         "html",
+--         "json",
 -- 	},
 
 -- 	sync_install = false,
