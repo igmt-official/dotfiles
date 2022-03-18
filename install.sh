@@ -8,8 +8,7 @@ echo ""
 echo "Note: Please follow the instruction carefully, to avoid cancelling this installation!"
 echo "And also make sure you have already installed 'node', 'npm' and 'yay (Aur Helper).'"
 echo "Make sure you have a good internet, because we are gonna download some dependencies and packages."
-echo "Do you want to procceed the installation? Type 'Y': " 
-read yN0
+read -p "Do you want to procceed the installation? Type 'Y': " yN0
 
 echo ""
 
@@ -48,8 +47,7 @@ if [ $yN0 == "Y" ]; then
 
     echo ""
 
-    echo "If you already done type 'Y' to continue our configuration: " 
-    read yN1
+    read -p "If you already done type 'Y' to continue our configuration: "yN1
 
     if [ $yN1 == "Y" ]; then
         echo "Installing Oh My Zsh..."
@@ -111,8 +109,7 @@ if [ $yN0 == "Y" ]; then
 
     echo ""
 
-    echo "If you done, type 'Y': " 
-    read yN2
+    read -p "If you done, type 'Y': "yN2
 
     echo ""
 
