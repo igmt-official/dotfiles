@@ -35,6 +35,7 @@ cp -r dotfiles/.config/nvim ~/.config
 | **[Lualine](https://github.com/nvim-lualine/lualine.nvim)**                         | Statusline               |
 | **[Barbar](https://github.com/romgrk/barbar.nvim)**                                 | Tabline                  |
 | **[Treesitter](https://tree-sitter.github.io/tree-sitter/)**                        | Treesitter               |
+| **[Telescope](https://github.com/nvim-telescope/telescope.nvim#pickers)**           | Telescope                |
 
 ## Plugins
 
@@ -81,6 +82,14 @@ For my **Treesitter Config**, I install **Python** and **Lua** to enable their s
 ```vim
 :TSInstall python
 :TSInstall lua
+```
+
+## Telescope
+
+Installing Ripgrep and Fd:
+
+```bash
+sudo pacman -S ripgrep fd
 ```
 
 Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.

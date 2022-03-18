@@ -40,3 +40,7 @@ map('n', '<C-p>', ':BufferPick<CR>', opts)
 map('n', '<Space>bb', ':BufferOrderByBufferNumber<CR>', opts)
 map('n', '<Space>bd', ':BufferOrderByDirectory<CR>', opts)
 map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
+
+--> Telescope <--
+map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
+map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)

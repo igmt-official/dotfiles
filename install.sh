@@ -88,6 +88,8 @@ if [ $yN0 == "Y" ]; then
     ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     echo "Copying neovim configuration..."
     cp -r $PWD/.config/nvim $HOME/.config/
+    echo "Installing Ripgrep and Fd (this is required for telescope)..."
+    sudo pacman -S ripgrep fd
 
     echo ""
 
