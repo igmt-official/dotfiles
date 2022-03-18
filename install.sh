@@ -6,6 +6,8 @@ echo "#################################################"
 echo ""
 
 echo "Note: Please follow the instruction carefully, to avoid cancelling this installation!"
+echo "And also make sure you have already installed 'git', 'node', 'npm' and 'yay (Aur Helper).'"
+echo "Make sure you have a good internet, because we are gonna download some dependencies and packages."
 echo "Do you want to procceed the installation? Type 'Y': " read yN0
 
 echo ""
@@ -85,7 +87,7 @@ if [ $yN0 == "Y" ]; then
 
     echo ""
 
-    echo "###############################################################################################################################################"
+    echo "########################################################################################"
     echo "Now follow this steps, to activate all plugins installed on my config."
     echo "Edit '.config/nvim/lua/packer-config/init.lua' in Neovim,"
     echo "to install packer plugin using this command: ':PackerSync'"
@@ -98,9 +100,11 @@ if [ $yN0 == "Y" ]; then
     echo "to install your langauge server go find in Lsp Config documentation in thei github,"
     echo "and edit '.config/nvim/lua/lsp-config/language-servers.lua' to add your language server."
     echo ""
-    echo "And for our Treesitter install what you want language, to install use this command: 'TSInstall (language)'"
-    echo "Then edit treesitter config to add your language '.config/nvim/lua/treesitter-config/init.lua', and uncomment all '--' sign."
-    echo "###############################################################################################################################################"
+    echo "And for our Treesitter install what you want language,"
+    echo "to install use this command: 'TSInstall (language)'"
+    echo "Then edit treesitter config '.config/nvim/lua/treesitter-config/init.lua,"
+    echo "to add your language ', and uncomment all '--' sign."
+    echo "########################################################################################"
 
     echo ""
 
@@ -131,5 +135,57 @@ if [ $yN0 == "Y" ]; then
         echo "Copying qutebrowser configuration..."
         [ ! -d "$HOME/.config/qutebrowser" ] && mkdir -p $HOME/.config/qutebrowser
         cp -r dotfiles/.config/qutebrowser $HOME/.config
-    
+
+        echo ""
+
+        echo "Installing Dunst..."
+        sudo pacman -S dunst
+        echo "Creating Symlink..."
+        cp /etc/dunst/dunstrc $HOME/.config/dunst/dunstrc
+        echo "Copying dunst configuration..."
+        cp -r $PWD/.config/dunst $HOME/.config
+
+        echo ""
+
+        echo "Installing Scrot..."
+        sudo pacman -S scrot
+        echo "Copying scrot configuration..."
+        [ ! -d "$HOME/.config/scrot" ] && mkdir -p $HOME/.config/scrot
+        cp -r $PWD/.config/scrot $HOME/.config
+
+        echo ""
+
+        echo "##################################################################################"
+        echo "Take note! To activate the keybinding of sreenshot (scrot),"
+        echo "you will need to change permission of that script to be executable,"
+        echo "go to scrot directory so we can locate our script to change the permission,"
+        echo "to change that use this command: 'chmod +x (name of script which is 'screenshot')'"
+        echo "##################################################################################"
+
+        echo ""
+
+        echo "Installing Spotify..."
+        yay -S spotify
+        echo "Installing Spicetify..."
+        yay -S spicetify-cli
+        echo "Applying permission to spotify..."
+        sudo chmod a+wr /opt/spotify
+        sudo chmod a+wr /opt/spotify/Apps -R
+        echo "Cloning spicetify themes..."
+        git clone https://github.com/spicetify/spicetify-themes.git
+        echo "Copying spicetify configuration..."
+        cd spicetify-themes
+        cp -r * $HOME/.config/spicetify/Themes
+        echo "Applying dribbblish themes..."
+        cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+        mkdir -p ../../Extensions
+        cp dribbblish.js ../../Extensions/.
+        spicetify config extensions dribbblish.js
+        spicetify config current_theme Dribbblish color_scheme base
+        spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
+        spicetify apply
+
+        echo ""
+
+        echo "All done."
 fi
