@@ -27,6 +27,12 @@ If you not downloaded yet my repository:
 git clone https://github.com/igmt-official/dotfiles.git && cd dotfiles
 ```
 
+If you already downloaded my repository, just go to my dotfiles directory:
+
+```bash
+cd dotfiles
+```
+
 Now we have to change permission our script to be a excutable:
 
 ```bash
