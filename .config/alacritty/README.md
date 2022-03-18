@@ -1,3 +1,9 @@
+Install **[Alacritty](https://github.com/alacritty/alacritty)**.
+
+```bash
+sudo pacman -S alacritty
+```
+
 If you not downloaded yet my repository:
 
 ```bash

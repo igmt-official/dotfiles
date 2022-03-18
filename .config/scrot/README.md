@@ -1,3 +1,9 @@
+Install **[Scrot](https://wiki.archlinux.org/title/Screen_capture#scrot)**:
+
+```bash
+sudo pacman -S scrot
+```
+
 If you not downloaded yet my repository:
 
 ```bash
@@ -15,3 +21,12 @@ And make it excutable script:
 ```bash
 chmod +x screenshot
 ```
+
+# KeyMap
+
+| Key                                 | Action                             |
+| ------------------------------------| -----------------------------------|
+| **mod + s**                         | Screenshot                         |
+| **mod + shift + s**                 | Screenshot Selected Area           |
+| **mod + control + shift + s**       | Screenshot Focus Window            |
+

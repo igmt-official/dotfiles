@@ -1,3 +1,10 @@
+Install **[Neofetch](https://github.com/dylanaraps/neofetch)**:
+
+```bash
+sudo pacman -S neofetch
+neofetch # Type this command for showcase your neofetch
+```
+
 If you not downloaded yet my repository:
 
 ```bash

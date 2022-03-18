@@ -6,25 +6,9 @@
 
 # Table of Contents
 - [About](#about)
+- [One Time Installation](#one-time-installation)
 - [Installing My Qtile](#installing-my-qtile)
 - [My Qtile Features](#my-qtile-features)
-    - [Terminal](#terminal)
-        - [ZSH](#zsh)
-        - [Neofetch](#neofetch)
-    - [Text Editor](#text-editor)
-    - [Neovim Features](#neovim-features)
-        - [Plugins](#plugins)
-        - [Lsp](#lsp)
-        - [Treesitter](#treesitter)
-        - [KeyMap](#keymap)
-    - [Font](#font)
-    - [Application Launcher](#application-launcher)
-    - [File Manager](#file-manager)
-    - [Browser](#browser)
-    - [Notification](#notification)
-    - [Screenshot](#screenshot)
-    - [Spotify](#spotify)
-    - [Theme](#theme)
 
 # About
 
@@ -34,6 +18,20 @@ i tried to install different window manager and it took me weeks to expirement e
 and i'm and stuck and struggle because i don't know how i will customize it from scratch because i don't understand what language they are,
 so while i'm exploring different window manager, i fount **Qtile** is written **Python** language, now here's the thing why i decide to use **Qtile**,
 it because i am a **Python Developer** so it easy to me to understand what code inside their config, and i can customize it from scratch.
+
+# One Time Installation
+
+If you not downloaded yet my repository:
+
+```bash
+git clone https://github.com/igmt-official/dotfiles.git && cd dotfiles
+```
+
+Now we have to change permission our script to be a excutable:
+
+```bash
+chmod +x install.sh
+```
 
 # Installing My Qtile
 
@@ -48,6 +46,7 @@ git clone https://github.com/igmt-official/dotfiles.git
 First Install Our Dependencies:
 
 Download the font that i'm using **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**.
+And follow this **[installation guide](https://github.com/igmt-official/dotfiles#font)**.
 
 Now install **Python Pip** and **Psutil**:
 
@@ -75,18 +74,17 @@ DISPLAY=:1 qtile
 
 If you only want specific features from my qtile customized, you can check it below.
 
-# Terminal
-
-Install **[Alacritty](https://github.com/alacritty/alacritty)**.
-
-If you want to use dracula theme like on my alacritty,
-just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/alacritty)**.
-
-```bash
-sudo pacman -S alacritty
-```
-
-### ZSH
+- [Alacritty](https://github.com/igmt-official/dotfiles/tree/main/.config/alacritty)
+- [ZSH](#zsh)
+- [Neofetch](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)
+- [Neovim](https://github.com/igmt-official/dotfiles/tree/main/.config/nvim)
+- [Rofi](#application-launcher)
+- [Thunar](#thunar)
+- [QuteBrowser](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)
+- [Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)
+- [Scrot](https://github.com/igmt-official/dotfiles/tree/main/.config/scrot)
+- [Spotify](#spotify)
+- [Theme](#theme)
 
 Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
@@ -149,159 +147,12 @@ If you want to use my **syntax-highlighting** theme which is dracula theme just 
 cp -r dotfiles/.zshrc ~
 ```
 
-### Neofetch
-
-Install **[Neofetch](https://github.com/dylanaraps/neofetch)**:
-
-```bash
-sudo pacman -S neofetch
-neofetch
-```
-
-If you want to use my neofetch customized, just copy my **[Config](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)**.
-
-# Text Editor
-
-Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
-
-```bash
-sudo pacman -S neovim
-```
-
-Now we can setup our **Neovim** to be our **IDE**, I will not guide you step by step, because it will take a long series.
-If you want to make your own setup, search in **[Youtube](https://youtube.com)**, this steps is guide to activate my **Neovim Setup**.
-
-## Neovim Features
-
-| Neovim Features                                                                     | Utility                  |
-| ----------------------------------------------------------------------------------- | ------------------------ |
-| **[Plugins Packer](https://github.com/wbthomason/packer.nvim)**                     | Plugins Installer        |
-| **[Nvim Tree](https://github.com/kyazdani42/nvim-tree.lua)**                        | File Explorer            |
-| **[Colorscheme](https://github.com/Mofiqul/dracula.nvim)**                          | Theme                    |
-| **[Lsp Config](https://github.com/neovim/nvim-lspconfig)**                          | Initializing Language    |
-| **[Cmp](https://github.com/neovim/nvim-lspconfig/wiki/Autocompletion)**             | Auto Complete Code       |
-| **[Lsp Kind](https://github.com/onsails/lspkind-nvim)**                             | Vscode-like Pictograms   |
-| **[Nvim Notify](https://github.com/rcarriga/nvim-notify)**                          | Fancy Notification       |
-| **[Lualine](https://github.com/nvim-lualine/lualine.nvim)**                         | Statusline               |
-| **[Barbar](https://github.com/romgrk/barbar.nvim)**                                 | Tabline                  |
-| **[Treesitter](https://tree-sitter.github.io/tree-sitter/)**                        | Treesitter               |
-
-### Plugins
-
-Install **Plugin Manager**:
-
-```bash
-# This is for setting up our Plugins Packer
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\
- ~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
-
-Now copy all my **[Neovim Config](https://github.com/igmt-official/dotfiles/tree/main/.config/nvim)**.
-
-Next edit ```.config/nvim/lua/packer-config/init.lua``` in **Neovim** install packer plugin using this command:
-
-```vim
-:PackerSync
-```
-
-Now try to uncommenting all plugins that have ```--``` sign and try to install all plugins using this command:
-
-```vim
-:PackerSync
-```
-
-After that edit ```.config/nvim/init.lua``` and uncommenting all ```--``` sign, then save it and reload the **Lua Config** using this command:
-
-```vim
-:luafile %
-```
-
-### Lsp
-
-For my **Lsp Config**, I install **[Python Language Server](https://github.com/microsoft/pyright)**, because I'm **Python Developer**.
-
-Installing **[Python Language Server](https://github.com/microsoft/pyright)**:
-
-```bash
-sudo npm i -g pyright
-```
-
-### Treesitter
-
-For my **Treesitter Config**, I install **Python** and **Lua** to enable their syntax, to install just type this command inside **Neovim**:
-
-```vim
-:TSInstall python
-:TSInstall lua
-```
-
-Now that we already installed our languages, edit ```.config/nvim/lua/treesitter-config/init.lua``` and uncommenting all ```--```.
-
-### KeyMap
-
-| Key                           | Action                   |
-| ------------------------------| ------------------------ |
-| **Space + t**                 | File Explorer            |
-
-# Fonts
-
-Download **[JetBrainsMono Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip)**
-
-# Application Launcher
-
-Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
-
-If you want to use dracula theme like on my rofi,
-just follow the steps **[here](https://github.com/igmt-official/dotfiles/tree/main/.config/rofi)**.
-
-```bash
-sudo pacman -S rofi
-```
-
-# File Manager
+# Thunar
 
 Install **[Thunar](https://wiki.archlinux.org/title/thunar)**:
 
 ```bash
 sudo pacman -S thunar
-```
-
-# Browser
-
-Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**.
-
-Copy my **[Conifg](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)** for the theme.
-
-```bash
-sudo pacman -S qutebrowser
-```
-
-# Notification
-
-Install **[Dunst](https://wiki.archlinux.org/title/Dunst)**.
-
-And if you want to use my config, just copy my config **[Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)**
-
-```bash
-sudo pacman -S dunst
-```
-
-Also i have **[Custom Scripts](https://github.com/igmt-official/dotfiles/tree/main/.local/bin)**, for wifi, screenshot, and volume notificiation.
-
-# Screenshot
-
-Install **[Scrot](https://wiki.archlinux.org/title/Screen_capture#scrot)**:
-
-```bash
-sudo pacman -S scrot
-```
-
-And if you want to use my script for my key binding, copy my script **[Scrot](https://github.com/igmt-official/dotfiles/tree/main/.config/scrot)**, now add this key binding on **Keys.py**:
-
-```python
-    ([mod], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot'))), # To screenshot whole window.
-    ([mod, "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot select'))), # To select area what you want to screenshot.
-    ([mod, "control", "shift"], "s", lazy.spawn(os.path.expanduser('~/.config/scrot/screenshot window'))), # To screenshot only where you focus window.
 ```
 
 # Spotify
@@ -359,7 +210,10 @@ You can pick what you one **[Spicetify Themes](https://github.com/spicetify/spic
 
 # Theme
 
-Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)** or just copy my config:
+Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**.
+And follow this **[installation guide](https://github.com/igmt-official/dotfiles#gtk-theming)**.
+
+You can also copy my config:
 
 ```bash
 cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.

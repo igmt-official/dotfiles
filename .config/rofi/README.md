@@ -1,3 +1,9 @@
+Install **[Rofi](https://wiki.archlinux.org/title/Rofi)**.
+
+```bash
+sudo pacman -S rofi
+```
+
 If you not downloaded yet my repository:
 
 ```bash

@@ -1,3 +1,9 @@
+Install **[QuteBrowser](https://wiki.archlinux.org/title/Qutebrowser)**.
+
+```bash
+sudo pacman -S qutebrowser
+```
+
 If you not downloaded yet my repository:
 
 ```bash
