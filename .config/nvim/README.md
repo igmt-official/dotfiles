@@ -1,3 +1,5 @@
+![2022-03-18-23:04:16-screenshot](https://user-images.githubusercontent.com/96023410/159028295-b9c4e545-7b1b-41ea-8387-c02b9ba1b42c.png)
+
 Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
 
 ```bash
