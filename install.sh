@@ -182,7 +182,12 @@ if [ $yN0 == "Y" ]; then
         spicetify apply
 
         echo ""
-        
+
+        echo "Now for setting up our theme, just go this this tutorial:"
+        echo "https://github.com/igmt-official/dotfiles#gtk-theming"
+
+        echo ""
+
         echo "All done."
     fi
 fi
