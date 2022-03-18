@@ -123,3 +123,4 @@ sudo npm install -g eslint
 | **a**                          | Create file inside File Explorer |
 | **alt + 1 - 9, 0**             | Next tab                         |
 | **leader + lf**                | Auto Format Code                 |
+| **:vsplit**                    | Vertical Split Pane              |
