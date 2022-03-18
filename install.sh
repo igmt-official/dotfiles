@@ -1,1 +1,1 @@
-echo Welcome to igmt-official dotfiles!
+echo Welcome to igmt-official dotfiles
