@@ -87,7 +87,7 @@ if [ $yN0 == "Y" ]; then
     git clone --depth 1 https://github.com/wbthomason/packer.nvim\
     ~/.local/share/nvim/site/pack/packer/start/packer.nvim
     echo "Copying neovim configuration..."
-    cp -r $PWD/.config/nvim $HOME/.config
+    cp -r $PWD/.config/nvim $HOME/.config/
 
     echo ""
 
@@ -128,7 +128,7 @@ if [ $yN0 == "Y" ]; then
         echo "Installing Rofi..."
         sudo pacman -S rofi
         echo "Copying rofi configuration..."
-        cp -r $PWD/.config/rofi $HOME/.config
+        cp -r $PWD/.config/rofi $HOME/.config/
 
         echo ""
 
@@ -145,7 +145,7 @@ if [ $yN0 == "Y" ]; then
         # sudo pacman -S qutebrowser
         echo "Copying qutebrowser configuration..."
         [ ! -d "$HOME/.config/qutebrowser" ] && mkdir -p $HOME/.config/qutebrowser
-        cp -r dotfiles/.config/qutebrowser $HOME/.config
+        cp -r dotfiles/.config/qutebrowser $HOME/.config/
 
         echo ""
 
@@ -156,7 +156,7 @@ if [ $yN0 == "Y" ]; then
         echo "Creating Symlink..."
         cp /etc/dunst/dunstrc $HOME/.config/dunst/dunstrc
         echo "Copying dunst configuration..."
-        cp -r $PWD/.config/dunst $HOME/.config
+        cp -r $PWD/.config/dunst $HOME/.config/
 
         echo ""
 
@@ -166,7 +166,7 @@ if [ $yN0 == "Y" ]; then
         sudo pacman -S scrot
         echo "Copying scrot configuration..."
         [ ! -d "$HOME/.config/scrot" ] && mkdir -p $HOME/.config/scrot
-        cp -r $PWD/.config/scrot $HOME/.config
+        cp -r $PWD/.config/scrot $HOME/.config/
 
         echo ""
 
@@ -178,6 +178,32 @@ if [ $yN0 == "Y" ]; then
         echo "##################################################################################"
 
         echo ""
+
+        ##### DISCORD #####
+
+        echo "Installing Discord..."
+        sudo pacman -S discord
+        echo "Installing BetterDiscord..."
+        yay -S betterdiscord-installer-bin
+
+        echo ""
+
+        echo "Now setup our BetterDiscord, launch betterdiscord,"
+        echo "just follow the installation step."
+
+        echo ""
+
+        read -p "If you already done setup BetterDiscord, type 'Y': "yN3
+
+        echo ""
+
+        if [ $yN3 == "Y" ]; then
+        
+            echo "Copying betterdiscord configuration..."
+            cp -r $PWD/.config/BetterDiscord $HOME/.config/
+
+            echo ""
+        fi
 
         ##### SPOTIFY #####
 
@@ -210,5 +236,7 @@ if [ $yN0 == "Y" ]; then
         echo ""
 
         echo "All done."
+
     fi
+
 fi
