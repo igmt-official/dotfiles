@@ -95,6 +95,7 @@ If you only want specific features from my qtile customized, you can check it be
 - [QuteBrowser](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)
 - [Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)
 - [Scrot](https://github.com/igmt-official/dotfiles/tree/main/.config/scrot)
+- [Discord](https://github.com/igmt-official/dotfiles/tree/main/.config/BetterDiscord)
 - [Spotify](#spotify)
 - [Theme](#theme)
 
