@@ -101,6 +101,8 @@ If you only want specific features from my qtile customized, you can check it be
 
 # Zsh
 
+![2022-03-18-22:57:21-screenshot](https://user-images.githubusercontent.com/96023410/159027100-94fd63b6-b1c1-4c71-a53e-a01bbff052e5.png)
+
 Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
 ```bash
