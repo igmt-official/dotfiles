@@ -21,6 +21,7 @@ groups = [
     Group(name = '1', label = "", layout = "monadtall"),
     Group(name = '2', label = "", matches = [Match(wm_class = 'qutebrowser')], layout = "monadtall"),
     Group(name = '3', label = "", matches = [Match(wm_class = 'Alacritty')], layout = "monadtall"),
+    Group(name = '4', label = "ﭮ", matches = [Match(wm_class = 'discord')], layout = 'max'),
     Group(name = '4', label = "", matches = [Match(wm_class = 'gimp-2.10')], layout = 'max'),
     Group(name = '5', label = "阮", matches = [Match(wm_class = 'spotify')], layout = 'max'),
     Group(name = '6', label = "", matches = [Match(wm_class = 'vlc')], layout = 'max'),
