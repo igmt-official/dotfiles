@@ -30,8 +30,7 @@ floating_layout = layout.Floating(
     float_rules=[
         *layout.Floating.default_float_rules,
         Match(wm_class='pavucontrol'),
-        Match(wm_class='Thunar'),
-        Match(wm_class='Gcolor3'),
+        Match(wm_class='ranger'),
         Match(wm_class='confirmreset'),
         Match(wm_class='makebranch'),
         Match(wm_class='maketag'),
