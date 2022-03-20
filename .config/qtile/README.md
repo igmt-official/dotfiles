@@ -72,7 +72,7 @@ If you only want specific features from my qtile customized, you can check it be
 - [Neofetch](https://github.com/igmt-official/dotfiles/tree/main/.config/neofetch)
 - [Neovim](https://github.com/igmt-official/dotfiles/tree/main/.config/nvim)
 - [Rofi](https://github.com/igmt-official/dotfiles/tree/main/.config/rofi)
-- [Ranger](#ranger)
+- [Ranger](https://github.com/igmt-official/dotfiles/tree/main/.config/ranger)
 - [QuteBrowser](https://github.com/igmt-official/dotfiles/tree/main/.config/qutebrowser)
 - [Dunst](https://github.com/igmt-official/dotfiles/tree/main/.config/dunst)
 - [Scrot](https://github.com/igmt-official/dotfiles/tree/main/.config/scrot)
@@ -143,14 +143,6 @@ If you want to use my **syntax-highlighting** theme which is dracula theme just 
 
 ```bash
 cp -r dotfiles/.zshrc ~
-```
-
-# Ranger
-
-Install **[Ranger](https://wiki.archlinux.org/title/ranger)**:
-
-```bash
-sudo pacman -S ranger
 ```
 
 # Spotify
