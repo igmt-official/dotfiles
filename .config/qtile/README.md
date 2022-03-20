@@ -6,7 +6,6 @@
 
 # Table of Contents
 - [About](#about)
-- [One Time Installation](#one-time-installation)
 - [Installing My Qtile](#installing-my-qtile)
 - [My Qtile Features](#my-qtile-features)
 
@@ -19,31 +18,6 @@ and i'm and stuck and struggle because i don't know how i will customize it from
 so while i'm exploring different window manager, i fount **Qtile** is written **Python** language, now here's the thing why i decide to use **Qtile**,
 it because i am a **Python Developer** so it easy to me to understand what code inside their config, and i can customize it from scratch.
 
-# One Time Installation
-
-If you not downloaded yet my repository:
-
-```bash
-git clone https://github.com/igmt-official/dotfiles.git && cd dotfiles
-```
-
-If you already downloaded my repository, just go to my dotfiles directory:
-
-```bash
-cd dotfiles
-```
-
-Now we have to change permission our script to be a excutable:
-
-```bash
-chmod +x install.sh
-```
-
-Now let's run our installation script:
-
-```bash
-./install.sh
-```
 
 # Installing My Qtile
 
@@ -67,6 +41,13 @@ sudo pacman -S python-pip # This is for pip installer.
 pip install psutil # Required for some widget on the bar.
 
 sudo pacman -S network-manager-applet volumeicon # This is for my System Tray.
+```
+
+We need to symlink the **default_config.py**:
+
+```bash
+$ mkdir -p ~/.config/qtile/
+$ cp /usr/share/doc/<qtile_dir>/default_config.py ~/.config/qtile/config.py
 ```
 
 Copy my configs:
