@@ -251,6 +251,7 @@ Uncommenting this line:
 Follow this step this is essentials, this is only for None-UEFI (MBR).
 
 ```bash
+pacman -S grub
 grub-install --target=i386-pc /dev/sda
 # "/dev/sda" is the main disk not the one we created partition.
 # "--target=i386-pc" is only for Non-UEFI (MBR).
