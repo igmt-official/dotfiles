@@ -4,6 +4,12 @@ Install **[Ranger](https://wiki.archlinux.org/title/Ranger)**.
 sudo pacman -S ranger
 ```
 
+This is for image preview in **Ranger**:
+
+```bash
+sudo pacman -S ueberzug
+```
+
 If you not downloaded yet my repository:
 
 ```bash
