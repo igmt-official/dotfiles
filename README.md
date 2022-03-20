@@ -9,7 +9,7 @@ Clone my repository, and go to this folder **[.config](https://github.com/igmt-o
 and find what you want config, each config already have installion guide.
 
 ```bash
-https://github.com/igmt-official/dotfiles.git
+git clone https://github.com/igmt-official/dotfiles.git
 ```
 
 # Table of Contents
