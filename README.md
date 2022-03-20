@@ -102,7 +102,7 @@ Now, jus follow my command line, to make our partition.
 # Remember the first one is "Swapfile Partition" that partition name is "/dev/sda1/ and the second one is our "Root Partition" "/dev/sda2/".
 # Now type "t" to change our partition type, type "1" for our "Swapfile Partition (/dev/sda1)" and then type "L" to check all list partition type, find the type of "Linux Swap" then enter that code.
 # And do it again on our "Root Partition" type "t", now type "2" this is our "Root Partition (/dev/sda2/)" and then type "L" again check all list partition type, find the type of "Linux" then enter that code.
-
+# The last part type "w" to write and exit.
 ```
 
 Format the partitions
