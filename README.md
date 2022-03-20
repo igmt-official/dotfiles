@@ -109,8 +109,8 @@ Format the partitions
 Once the partitions have been created, each newly created partition must be formatted with an appropriate file system.
 
 ```bash
- mkfs.ext4 /dev/root_partition # This is the our "Root Partition" for me is "mkfs.ext4 /dev/sda2/.
- mkswap /dev/swap_partition # And this is our "Swapfile Partition" for me is "mkswap /dev/sda1/.
+ mkfs.ext4 /dev/root_partition # This is the our "Root Partition" for me is "mkfs.ext4 /dev/sda2.
+ mkswap /dev/swap_partition # And this is our "Swapfile Partition" for me is "mkswap /dev/sda1
  ```
  
  And now we done formatting our partition, next step is to turn on our "Swapfile" and mount "mnt" in our "Root Partition".
