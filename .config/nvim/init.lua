@@ -1,7 +1,7 @@
 require "options"
 require "keymap-config"
 require "packer-config"
-require "colorschemes-config.codedark"
+require "colorschemes-config.base16"
 require "nvim-tree-config"
 require "lsp-config.language-servers"
 require "lsp-config.nvim-cmp"

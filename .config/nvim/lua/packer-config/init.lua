@@ -5,6 +5,7 @@ return require("packer").startup(function()
     -- Colorschemes
     use 'Mofiqul/dracula.nvim'
     use 'tomasiser/vim-code-dark'
+    use 'RRethy/nvim-base16'
 
     -- Nvim Tree
     use 'kyazdani42/nvim-tree.lua'
