@@ -92,7 +92,7 @@ screens = [
                 widget.TextBox(
                     text='\uE0B2',
                     background=colors['current_line'],
-                    foreground=colors['background'],
+                    foreground=colors['current_line'],
                     padding=0,
                     fontsize=25
                 ),
@@ -104,10 +104,10 @@ screens = [
                 ),
                 widget.TextBox(
                     font="JetBrainsMono Bold",
-                    text='UPDATES: ',
-                    background=colors['background'],
-                    foreground=colors['red'],
-                    padding=0,
+                    text='UPDATES:',
+                    background=colors['red'],
+                    foreground=colors['background'],
+                    padding=5,
                     fontsize=10
                 ),
                 widget.CheckUpdates(
@@ -117,27 +117,35 @@ screens = [
                     distro="Arch",
                     display_format="{updates}",
                     no_update_string='NO UPDATES',
-                    foreground=colors['white'],
+                    foreground=colors['background'],
                     colour_have_updates=colors['green'],
-                    colour_no_updates=colors['white'],
+                    colour_no_updates=colors['background'],
                     mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
                         'alacritty' + ' -e sudo pacman -Syu')},
                     padding=5,
-                    background=colors['background']
+                    background=colors['white']
                 ),
                 widget.Sep(
                     linewidth=0,
                     padding=5,
                     foreground=colors['background'],
                     background=colors['background']
+                ),
+                widget.TextBox(
+                    font="JetBrainsMono Bold",
+                    text='THERMAL:',
+                    background=colors['green'],
+                    foreground=colors['background'],
+                    padding=5,
+                    fontsize=10
                 ),
                 widget.ThermalSensor(
                     font="JetBrainsMono Bold",
                     fontsize=10,
-                    foreground=colors['green'],
-                    background=colors['background'],
+                    foreground=colors['background'],
+                    background=colors['white'],
                     threshold=90,
-                    fmt='THERMAL: {}',
+                    fmt='{}',
                     padding=5
                 ),
                 widget.Sep(
@@ -145,16 +153,24 @@ screens = [
                     padding=5,
                     foreground=colors['background'],
                     background=colors['background']
+                ),
+                widget.TextBox(
+                    font="JetBrainsMono Bold",
+                    text='MEMORY:',
+                    background=colors['yellow'],
+                    foreground=colors['background'],
+                    padding=5,
+                    fontsize=10
                 ),
                 widget.Memory(
                     font="JetBrainsMono Bold",
                     fontsize=10,
-                    foreground=colors['yellow'],
+                    foreground=colors['background'],
                     mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
                         "alacritty" + ' -e htop')},
-                    fmt='MEMORY: {}',
+                    fmt='{}',
                     padding=5,
-                    background=colors['background']
+                    background=colors['white']
                 ),
                 widget.Sep(
                     linewidth=0,
@@ -162,12 +178,20 @@ screens = [
                     foreground=colors['background'],
                     background=colors['background']
                 ),
+                widget.TextBox(
+                    font="JetBrainsMono Bold",
+                    text='CPU:',
+                    background=colors['blue'],
+                    foreground=colors['background'],
+                    padding=5,
+                    fontsize=10
+                ),
                 widget.CPU(
                     font="JetBrainsMono Bold",
                     fontsize=10,
-                    foreground=colors['blue'],
-                    background=colors['background'],
-                    format='CPU: {freq_current}GHz {load_percent}%',
+                    foreground=colors['background'],
+                    background=colors['white'],
+                    format='{freq_current}GHz {load_percent}%',
                     padding=5
                 ),
                 widget.Sep(
@@ -176,11 +200,19 @@ screens = [
                     foreground=colors['background'],
                     background=colors['background']
                 ),
+                widget.TextBox(
+                    font="JetBrainsMono Bold",
+                    text='CLOCK:',
+                    background=colors['magenta'],
+                    foreground=colors['background'],
+                    padding=5,
+                    fontsize=10
+                ),
                 widget.Clock(
                     font="JetBrainsMono Bold",
                     fontsize=10,
-                    foreground=colors['magenta'],
-                    background=colors['background'],
+                    foreground=colors['background'],
+                    background=colors['white'],
                     format="%B %d %a %I:%M %p",
                     padding=5
                 ),
