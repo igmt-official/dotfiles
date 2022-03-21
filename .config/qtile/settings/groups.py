@@ -22,7 +22,7 @@ groups = [
     Group(name='2', label="QB", matches=[
           Match(wm_class='qutebrowser')], layout="monadtall"),
     Group(name='3', label="DEV", matches=[
-          Match(wm_class='Alacritty')], layout="monadtall"),
+          Match(wm_class='Alacritty'), Match(wm_class='code-git')], layout="monadtall"),
     Group(name='4', label="CHAT", matches=[
           Match(wm_class='discord')], layout='max'),
     Group(name='5', label="PLAY", matches=[Match(wm_class='vlc')], layout='max'),
