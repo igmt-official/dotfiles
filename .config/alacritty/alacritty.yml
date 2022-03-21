@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/dracula.yml
+  - ~/.config/alacritty/aliScheme.yml
 
 # Font configuration
 font:
