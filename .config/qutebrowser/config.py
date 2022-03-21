@@ -9,4 +9,3 @@ aliScheme.draw.blood(c, {
         'horizontal': 8
     }
 })
-
