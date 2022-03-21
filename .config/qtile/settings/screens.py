@@ -66,7 +66,8 @@ screens = [
                 ),
                 widget.GroupBox(
                     **decor,
-                    fontsize=20
+                    font='JetBrainsMono Bold',
+                    fontsize=10
                 ),
                 widget.TextBox(
                     text='\uE0B0',
@@ -107,11 +108,11 @@ screens = [
                     background=colors['background'],
                     foreground=colors['red'],
                     padding=0,
-                    fontsize=12
+                    fontsize=10
                 ),
                 widget.CheckUpdates(
                     font="JetBrainsMono Bold",
-                    fontsize=12,
+                    fontsize=10,
                     update_interval=1800,
                     distro="Arch",
                     display_format="{updates}",
@@ -132,8 +133,8 @@ screens = [
                 ),
                 widget.ThermalSensor(
                     font="JetBrainsMono Bold",
-                    fontsize=12,
-                    foreground=colors['red'],
+                    fontsize=10,
+                    foreground=colors['green'],
                     background=colors['background'],
                     threshold=90,
                     fmt='THERMAL: {}',
@@ -144,11 +145,11 @@ screens = [
                     padding=5,
                     foreground=colors['background'],
                     background=colors['background']
-                ),   
+                ),
                 widget.Memory(
                     font="JetBrainsMono Bold",
-                    fontsize=12,
-                    foreground=colors['red'],
+                    fontsize=10,
+                    foreground=colors['yellow'],
                     mouse_callbacks={'Button1': lambda: qtile.cmd_spawn(
                         "alacritty" + ' -e htop')},
                     fmt='MEMORY: {}',
@@ -163,8 +164,8 @@ screens = [
                 ),
                 widget.CPU(
                     font="JetBrainsMono Bold",
-                    fontsize=12,
-                    foreground=colors['red'],
+                    fontsize=10,
+                    foreground=colors['blue'],
                     background=colors['background'],
                     format='CPU: {freq_current}GHz {load_percent}%',
                     padding=5
@@ -177,8 +178,8 @@ screens = [
                 ),
                 widget.Clock(
                     font="JetBrainsMono Bold",
-                    fontsize=12,
-                    foreground=colors['red'],
+                    fontsize=10,
+                    foreground=colors['magenta'],
                     background=colors['background'],
                     format="%B %d %a %I:%M %p",
                     padding=5
@@ -191,7 +192,7 @@ screens = [
                 ),
                 widget.Systray(
                     background=colors['background'],
-                    icon_size=15,
+                    icon_size=10,
                     padding=5
                 ),
                 widget.Sep(
@@ -204,7 +205,7 @@ screens = [
                     background=colors['background'],
                     foreground=colors['red'],
                     default_text="",
-                    fontsize=15,
+                    fontsize=10,
                     padding=5,
                     countdown_start=5,
                     countdown_format="",
