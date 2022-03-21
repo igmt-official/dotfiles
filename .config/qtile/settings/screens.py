@@ -144,7 +144,7 @@ screens = [
                     padding=5,
                     foreground=colors['background'],
                     background=colors['background']
-                ),
+                ),   
                 widget.Memory(
                     font="JetBrainsMono Bold",
                     fontsize=12,

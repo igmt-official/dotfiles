@@ -6,7 +6,7 @@ from .colors import colors
 
 
 layout_conf = {
-    'border_focus': colors['red'],
+    'border_focus': colors['current_line'],
     'border_width': 2,
     'margin': 10
 }
@@ -40,3 +40,4 @@ floating_layout = layout.Floating(
     ],
     border_focus=colors['background']
 )
+

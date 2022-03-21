@@ -70,7 +70,7 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     ([mod], "b", lazy.spawn("qutebrowser")),
 
     # File Explorer
-    ([mod], "e", lazy.spawn("Thunar")),
+    ([mod], "e", lazy.spawn("alacritty -e ranger")),
 
     # Terminal
     ([mod], "Return", lazy.spawn("alacritty")),
@@ -107,3 +107,4 @@ keys = [Key(key[0], key[1], *key[2:]) for key in [
     # ([], "XF86MonBrightnessUp", lazy.spawn("brightnessctl set +10%")),
     # ([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]]
+
