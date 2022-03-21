@@ -200,12 +200,5 @@ You can pick what you one **[Spicetify Themes](https://github.com/spicetify/spic
 
 # Theme
 
-Download **[Dracula](https://www.gnome-look.org/s/Gnome/p/1687249)**.
+Download **[Snow Alien](https://www.gnome-look.org/p/1214421)**.
 And follow this **[installation guide](https://github.com/igmt-official/dotfiles#gtk-theming)**.
-
-You can also copy my config:
-
-```bash
-cp -r dotfiles/.gtkrc-2.0 ~ # This will be placed on Root Folder.
-cp -r dotfiles/.config/gtk-3.0 ~/.config
-```
