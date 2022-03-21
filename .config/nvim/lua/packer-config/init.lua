@@ -4,6 +4,7 @@ return require("packer").startup(function()
 
     -- Colorschemes
     use 'Mofiqul/dracula.nvim'
+    use 'tomasiser/vim-code-dark'
 
     -- Nvim Tree
     use 'kyazdani42/nvim-tree.lua'
@@ -18,8 +19,8 @@ return require("packer").startup(function()
         requires = { {'nvim-lua/plenary.nvim'} }
       }
 
-    -- Null-ls
-    use 'jose-elias-alvarez/null-ls.nvim'
+    -- Color Preview
+    use 'norcalli/nvim-colorizer.lua'
 
     -- Lsp
     use 'neovim/nvim-lspconfig'
@@ -28,6 +29,7 @@ return require("packer").startup(function()
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
     use 'onsails/lspkind-nvim'
+    use 'jose-elias-alvarez/null-ls.nvim'
 
     use 'rcarriga/nvim-notify'
     use 'nvim-lualine/lualine.nvim'
