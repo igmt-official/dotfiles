@@ -1,4 +1,3 @@
-
 from libqtile.config import Match
 from libqtile import layout
 from .colors import colors
@@ -7,7 +6,7 @@ from .colors import colors
 
 
 layout_conf = {
-    'border_focus': colors['purple'],
+    'border_focus': colors['red'],
     'border_width': 2,
     'margin': 10
 }

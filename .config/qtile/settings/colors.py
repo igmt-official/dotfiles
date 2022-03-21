@@ -1,8 +1,8 @@
 colors = {
-        "background": "#282a36",
-        "current_line": "#44475a",
+        "background": "#2c2c2c",
+        "current_line": "#474747",
         "foreground": "#f8f8f2",
-        "comment": "#6272a4",
+        "comment": "#535453",
         "cyan": "#8be9fd",
         "green": "#50fa7b",
         "orange": "#ffb86c",
@@ -10,4 +10,5 @@ colors = {
         "purple": "#bd93f9",
         "red": "#ff5555",
         "yellow": "#f1fa8c",
+        "white": "#ffffff",
         }
