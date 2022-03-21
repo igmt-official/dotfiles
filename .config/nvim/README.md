@@ -54,17 +54,9 @@ Next edit ```.config/nvim/lua/packer-config/init.lua``` in **Neovim** install pa
 :PackerSync
 ```
 
-Now try to uncommenting all plugins that have ```--``` sign and try to install all plugins using this command:
-
-```vim
-:PackerSync
-```
-
-After that edit ```.config/nvim/init.lua``` and uncommenting all ```--``` sign, then save it and reload the **Lua Config** using this command:
-
-```vim
-:luafile %
-```
+Now make sure install your **Language Servers** for **Lsp Config**,
+also install your language for **Treesitter** also for **Null-ls**,
+and install required dependencies for **Telescope**.
 
 ## Lsp
 
@@ -114,6 +106,12 @@ Installing Eslint and Autopep8:
 
 ```bash
 sudo npm install -g eslint
+```
+
+After that edit ```.config/nvim/init.lua``` and uncommenting all ```--``` sign, then save it and reload the **Lua Config** using this command:
+
+```vim
+:luafile %
 ```
 
 ## KeyMap
