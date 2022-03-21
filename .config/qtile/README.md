@@ -1,8 +1,7 @@
 # Qtile (Arch Based)
-
-![2022-03-17-13:01:04-screenshot](https://user-images.githubusercontent.com/96023410/158740629-9960d26f-6fb0-479d-9d6c-ac4a26809ec3.png)
-![2022-03-17-12:55:33-screenshot](https://user-images.githubusercontent.com/96023410/158740646-7eb3fb8f-626c-46c6-8ed2-36faa710e765.png)
-![2022-03-17-00:38:15-screenshot](https://user-images.githubusercontent.com/96023410/158740655-76166b97-1cdb-4a86-8ae3-6d568a11174b.png)
+![2022-03-21-20:00:52-screenshot](https://user-images.githubusercontent.com/96023410/159257550-784faf05-cc70-4ded-b7fb-a50d8cd9d797.png)
+![2022-03-21-19:40:15-screenshot](https://user-images.githubusercontent.com/96023410/159257472-71e6eef5-07ac-4bd7-be85-bc52391b981e.png)
+![2022-03-21-19:45:00-screenshot](https://user-images.githubusercontent.com/96023410/159257525-6d9a9eb7-f854-49f0-9939-b8b6cffbc04e.png)
 
 # Table of Contents
 - [About](#about)
@@ -82,7 +81,7 @@ If you only want specific features from my qtile customized, you can check it be
 
 # Zsh
 
-![2022-03-18-22:57:21-screenshot](https://user-images.githubusercontent.com/96023410/159027100-94fd63b6-b1c1-4c71-a53e-a01bbff052e5.png)
+![2022-03-21-19:35:46-screenshot](https://user-images.githubusercontent.com/96023410/159257867-3f769bd1-f81b-4f89-a8ac-69aceec86c4a.png)
 
 Install **[Zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)**:
 
@@ -146,6 +145,8 @@ cp -r dotfiles/.zshrc ~
 ```
 
 # Spotify
+
+![2022-03-21-19:44:33-screenshot](https://user-images.githubusercontent.com/96023410/159257914-8fc13fe0-d364-4c70-8ae8-033a854a6af0.png)
 
 Install **[Spotify](https://wiki.archlinux.org/title/spotify)**:
 

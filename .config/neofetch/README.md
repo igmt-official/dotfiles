@@ -1,4 +1,4 @@
-![2022-03-18-22:53:26-screenshot](https://user-images.githubusercontent.com/96023410/159026685-222f1ae4-0794-427e-944c-2d6c8eb05ad0.png)
+![2022-03-21-19:30:39-screenshot](https://user-images.githubusercontent.com/96023410/159258148-ca114681-5a2f-4f80-9d9f-f182b5cf1f2d.png)
 
 Install **[Neofetch](https://github.com/dylanaraps/neofetch)**:
 

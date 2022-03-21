@@ -1,4 +1,4 @@
-![2022-03-18-22:59:58-screenshot](https://user-images.githubusercontent.com/96023410/159027552-e37e5cce-81d8-4b74-a9fb-97a352d13e34.png)
+![2022-03-21-19:37:17-screenshot](https://user-images.githubusercontent.com/96023410/159258114-2ec336eb-dfb1-4160-a972-ed986deb05dc.png)
 
 Install **[Alacritty](https://github.com/alacritty/alacritty)**.
 
