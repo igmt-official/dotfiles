@@ -184,14 +184,14 @@ cd spicetify-themes
 cp -r * ~/.config/spicetify/Themes
 ```
 
-Now let's apply our themes, which is mine is **[Dribbblish](https://github.com/spicetify/spicetify-themes/tree/master/Dribbblish)**:
+Now let's apply our themes, which is mine is **[Fluent](https://github.com/spicetify/spicetify-themes/tree/master/Fluent)**:
 
 ```
-cd "$(dirname "$(spicetify -c)")/Themes/Dribbblish"
+cd "$(dirname "$(spicetify -c)")/Themes/Fluent"
 mkdir -p ../../Extensions
-cp dribbblish.js ../../Extensions/.
-spicetify config extensions dribbblish.js
-spicetify config current_theme Dribbblish color_scheme base
+cp fluent.js ../../Extensions/.
+spicetify config extensions fluent.js
+spicetify config current_theme Fluent color_scheme dark
 spicetify config inject_css 1 replace_colors 1 overwrite_assets 1
 spicetify apply
 ```
