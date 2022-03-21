@@ -1,4 +1,4 @@
-![2022-03-18-22:53:15-screenshot](https://user-images.githubusercontent.com/96023410/159026489-eb7c5985-df76-4ac0-975a-bea5b4b477ad.png)
+![2022-03-21-19:59:53-screenshot](https://user-images.githubusercontent.com/96023410/159258436-d26fe080-8bbb-4104-8de5-17644a81bad2.png)
 
 Install **[Discrod](https://wiki.archlinux.org/title/Discord)** and **BetterDiscord**.
 
