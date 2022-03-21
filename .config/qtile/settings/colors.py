@@ -1,6 +1,6 @@
 colors = {
     "background": '#181818',
-    "current_line": '#1e1e1e',
+    "current_line": '#282828',
     "foreground": '#f8f8f2',
     "comment": '#535453',
     "black":   '#181818',
