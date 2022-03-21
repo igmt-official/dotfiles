@@ -3,8 +3,6 @@ return require("packer").startup(function()
     use'wbthomason/packer.nvim'
 
     -- Colorschemes
-    use 'Mofiqul/dracula.nvim'
-    use 'tomasiser/vim-code-dark'
     use 'RRethy/nvim-base16'
 
     -- Nvim Tree
