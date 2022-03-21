@@ -1,4 +1,4 @@
-![2022-03-18-23:04:16-screenshot](https://user-images.githubusercontent.com/96023410/159028295-b9c4e545-7b1b-41ea-8387-c02b9ba1b42c.png)
+![2022-03-21-19:32:57-screenshot](https://user-images.githubusercontent.com/96023410/159258190-a5b90b65-8281-4253-9748-11151f8176a2.png)
 
 Install **[Neovim](https://github.com/neovim/neovim/wiki/Installing-Neovim)**:
 
