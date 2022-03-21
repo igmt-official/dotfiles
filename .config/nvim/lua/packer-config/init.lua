@@ -3,6 +3,8 @@ return require("packer").startup(function()
     use'wbthomason/packer.nvim'
 
     -- Colorschemes
+    use 'Mofiqul/dracula.nvim'
+    use 'tomasiser/vim-code-dark'
     use 'RRethy/nvim-base16'
 
     -- Nvim Tree
@@ -28,7 +30,7 @@ return require("packer").startup(function()
     use 'saadparwaiz1/cmp_luasnip' -- Snippets source for nvim-cmp
     use 'L3MON4D3/LuaSnip' -- Snippets plugin
     use 'onsails/lspkind-nvim'
-    use 'jose-elias-alvarez/null-ls.nvim'
+    use 'jose-elias-alvarez/null-ls.nvim' -- Format on save
 
     use 'rcarriga/nvim-notify'
     use 'nvim-lualine/lualine.nvim'

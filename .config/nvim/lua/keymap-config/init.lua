@@ -44,3 +44,5 @@ map('n', '<Space>bl', ':BufferOrderByLanguage<CR>', opts)
 --> Telescope <--
 map('n', '<leader>ff', ':Telescope find_files<CR>', opts)
 map('n', '<leader>fg', ':Telescope live_grep<CR>', opts)
+
+map('n', '<leader>r', ':vsplit term://python3 %<CR>', opts)
