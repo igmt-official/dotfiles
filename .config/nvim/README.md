@@ -82,6 +82,12 @@ And also install **[Eslint Language Server](https://github.com/hrsh7th/vscode-la
 sudo npm i -g vscode-langservers-extracted
 ```
 
+Install **[Html](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#html)**:
+
+```bash
+sudo npm i -g vscode-langservers-extracted
+```
+
 You can install what you want language to install your langauge server,
 go to this site **[Language Servers](https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md)**.
 
