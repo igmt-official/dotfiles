@@ -116,19 +116,19 @@ sudo pacman -S ripgrep fd
 
 ## Null-ls
 
-For python formatter install **[Autopep8](https://github.com/hhatto/autopep8/tree/889805a94fbb33d6e1b896406c970d942369031a)**
+For python formatter install **[Autopep8](https://github.com/hhatto/autopep8/tree/889805a94fbb33d6e1b896406c970d942369031a)**:
 
 ```bash
 pip install --upgrade autopep8
 ```
 
-For javascript and typerscript formatter install **[Eslint](https://github.com/eslint/eslint/tree/18f5e05bce10503186989d81ca484abb185a2c9d)**
+For javascript and typerscript formatter install **[Eslint](https://github.com/eslint/eslint/tree/18f5e05bce10503186989d81ca484abb185a2c9d)**:
 
 ```bash
 sudo npm install eslint --save-dev
 ```
 
-For html and css formatter install **[Prettier](https://github.com/prettier/prettier)**
+For html and css formatter install **[Prettier](https://github.com/prettier/prettier)**:
 
 ```bash
 sudo npm install --save-dev --save-exact prettier
