@@ -128,7 +128,7 @@ For javascript and typerscript formatter install **[Eslint](https://github.com/e
 sudo npm install eslint --save-dev
 ```
 
-For html and css formatter install**[Prettier](https://github.com/prettier/prettier)**
+For html and css formatter install **[Prettier](https://github.com/prettier/prettier)**
 
 ```bash
 sudo npm install --save-dev --save-exact prettier
